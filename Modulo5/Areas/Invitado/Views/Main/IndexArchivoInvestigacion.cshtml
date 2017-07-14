@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "IndexArchivoInvestigacion";
+}
+
+<br />
+<br />
+
+
+<div id="divListadoArchivoI">
+
+</div>
+
+<script>
+
+    CargarListado();
+
+    function CargarListado() {
+
+        $.ajax({
+            type: "POST",
+            url: "/Invitado/Main/ListadoAI",
+            success: function (html) {
+                $("#divListadoArchivoI").html(html);
+            }
+        });
+    }
+
+</script>

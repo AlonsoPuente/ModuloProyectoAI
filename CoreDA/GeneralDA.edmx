@@ -1,0 +1,2564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="WebModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Alumno">
+          <Key>
+            <PropertyRef Name="ID_Alumno" />
+          </Key>
+          <Property Name="ID_Alumno" Type="int" Nullable="false" />
+          <Property Name="ID_Usuario" Type="int" />
+          <Property Name="ID_Usuario_crea" Type="int" />
+          <Property Name="ID_Usuario_mod" Type="int" />
+          <Property Name="Nombres" Type="varchar" MaxLength="50" />
+          <Property Name="Apellidos" Type="varchar" MaxLength="50" />
+          <Property Name="Codigo" Type="varchar" MaxLength="8" />
+          <Property Name="Correo" Type="varchar" MaxLength="50" />
+          <Property Name="Celular" Type="varchar" MaxLength="30" />
+          <Property Name="Direccion" Type="varchar" MaxLength="50" />
+          <Property Name="Ciclo" Type="int" />
+          <Property Name="DNI" Type="int" />
+          <Property Name="Fecha_Nacimiento" Type="datetime" />
+          <Property Name="Estado" Type="int" />
+          <Property Name="Tipo" Type="varchar" MaxLength="15" />
+          <Property Name="Testimonio" Type="varchar" MaxLength="50" />
+          <Property Name="Puesto_empresa" Type="varchar" MaxLength="15" />
+          <Property Name="Promocion" Type="varchar" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="Archivo_Investigacion">
+          <Key>
+            <PropertyRef Name="ID_ArchivoI" />
+          </Key>
+          <Property Name="ID_ArchivoI" Type="int" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+          <Property Name="Fecha_invest" Type="datetime" />
+          <Property Name="Fecha_pub_ini" Type="datetime" />
+          <Property Name="Fecha_pub_fin" Type="datetime" />
+          <Property Name="Foto" Type="varchar" MaxLength="20" />
+          <Property Name="Estado" Type="int" />
+          <Property Name="Referencia" Type="varchar" MaxLength="50" />
+          <Property Name="Fecha_crea" Type="datetime" />
+          <Property Name="ID_Usuario_crea" Type="int" />
+          <Property Name="Fecha_mod" Type="datetime" />
+          <Property Name="ID_Usuario_mod" Type="int" />
+          <Property Name="Link_file" Type="varchar" MaxLength="20" />
+          <Property Name="Keywords" Type="varchar" MaxLength="50" />
+          <Property Name="ID_Proyecto" Type="int" />
+          <Property Name="AI_Externo" Type="char" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="ArchivoI_Proyecto">
+          <Key>
+            <PropertyRef Name="ID_ArchivoI" />
+            <PropertyRef Name="ID_Proyecto" />
+          </Key>
+          <Property Name="ID_ArchivoI" Type="int" Nullable="false" />
+          <Property Name="ID_Proyecto" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Categoria">
+          <Key>
+            <PropertyRef Name="ID_Categoria" />
+          </Key>
+          <Property Name="ID_Categoria" Type="int" Nullable="false" />
+          <Property Name="Categoria" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Clic">
+          <Key>
+            <PropertyRef Name="ID_Clic" />
+          </Key>
+          <Property Name="ID_Clic" Type="int" Nullable="false" />
+          <Property Name="ID_Usuario" Type="int" />
+          <Property Name="Cont_ArchivoI" Type="int" />
+          <Property Name="Cont_Noticias" Type="int" />
+          <Property Name="Cont_Eventos" Type="int" />
+          <Property Name="Cont_AcercaDe" Type="int" />
+          <Property Name="Cont_Proyectos" Type="int" />
+          <Property Name="FechaHora" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Comentario">
+          <Key>
+            <PropertyRef Name="ID_Comentario" />
+          </Key>
+          <Property Name="ID_Comentario" Type="int" Nullable="false" />
+          <Property Name="ID_Noticia" Type="int" />
+          <Property Name="ID_Usuario" Type="int" />
+          <Property Name="Contenido" Type="varchar" MaxLength="50" />
+          <Property Name="Fecha_pub" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Conoc_adic">
+          <Key>
+            <PropertyRef Name="ID_Conoc_adic" />
+          </Key>
+          <Property Name="ID_Conoc_adic" Type="int" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Curso">
+          <Key>
+            <PropertyRef Name="ID_Curso" />
+          </Key>
+          <Property Name="ID_Curso" Type="int" Nullable="false" />
+          <Property Name="ID_Profesor" Type="int" />
+          <Property Name="Nombre" Type="varchar" MaxLength="40" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+          <Property Name="Horario" Type="varchar" MaxLength="15" />
+          <Property Name="Creditos" Type="int" />
+        </EntityType>
+        <EntityType Name="Descarga_ArchivoI">
+          <Key>
+            <PropertyRef Name="ID_ArchivoI" />
+            <PropertyRef Name="ID_Usuario" />
+          </Key>
+          <Property Name="ID_ArchivoI" Type="int" Nullable="false" />
+          <Property Name="ID_Usuario" Type="int" Nullable="false" />
+          <Property Name="Fecha" Type="datetime" />
+          <Property Name="Cont_descargas" Type="int" />
+        </EntityType>
+        <EntityType Name="Det_Archivo_Inv">
+          <Key>
+            <PropertyRef Name="ID_ArchivoI" />
+            <PropertyRef Name="ID_Usuario" />
+          </Key>
+          <Property Name="ID_ArchivoI" Type="int" Nullable="false" />
+          <Property Name="ID_Usuario" Type="int" Nullable="false" />
+          <Property Name="Rol" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Det_Certificado">
+          <Key>
+            <PropertyRef Name="ID_HojaVida" />
+          </Key>
+          <Property Name="ID_HojaVida" Type="int" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" />
+          <Property Name="Institucion" Type="varchar" MaxLength="50" />
+          <Property Name="Fecha_Ini" Type="datetime" />
+          <Property Name="Fecha_Fin" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Det_Conoc_adic">
+          <Key>
+            <PropertyRef Name="ID_HojaVida" />
+          </Key>
+          <Property Name="ID_HojaVida" Type="int" Nullable="false" />
+          <Property Name="Tipo" Type="varchar" MaxLength="50" />
+          <Property Name="Herramienta" Type="varchar" MaxLength="50" />
+          <Property Name="Nivel" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Det_Exp_Laboral">
+          <Key>
+            <PropertyRef Name="ID_HojaVida" />
+          </Key>
+          <Property Name="ID_HojaVida" Type="int" Nullable="false" />
+          <Property Name="Empresa" Type="varchar" MaxLength="50" />
+          <Property Name="Fecha_Ini" Type="datetime" />
+          <Property Name="Fecha_Fin" Type="datetime" />
+          <Property Name="Rol" Type="varchar" MaxLength="20" />
+          <Property Name="Comentario" Type="varchar" MaxLength="50" />
+          <Property Name="Referencia" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Det_Form_Acad">
+          <Key>
+            <PropertyRef Name="ID_HojaVida" />
+          </Key>
+          <Property Name="ID_HojaVida" Type="int" Nullable="false" />
+          <Property Name="Grado_acad" Type="varchar" MaxLength="50" />
+          <Property Name="Carrera" Type="varchar" MaxLength="50" />
+          <Property Name="Institucion" Type="varchar" MaxLength="50" />
+          <Property Name="Fecha_Ini" Type="datetime" />
+          <Property Name="Fecha_Fin" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Det_Idiomas">
+          <Key>
+            <PropertyRef Name="ID_HojaVida" />
+          </Key>
+          <Property Name="ID_HojaVida" Type="int" Nullable="false" />
+          <Property Name="Institución" Type="varchar" MaxLength="50" />
+          <Property Name="Idioma" Type="varchar" MaxLength="50" />
+          <Property Name="NOral" Type="varchar" MaxLength="50" />
+          <Property Name="NEscrito" Type="varchar" MaxLength="50" />
+          <Property Name="NLectura" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Det_Logro">
+          <Key>
+            <PropertyRef Name="ID_HojaVida" />
+          </Key>
+          <Property Name="ID_HojaVida" Type="int" Nullable="false" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Det_Partic_Proyecto">
+          <Key>
+            <PropertyRef Name="ID_Proyecto" />
+            <PropertyRef Name="ID_Usuario" />
+          </Key>
+          <Property Name="ID_Proyecto" Type="int" Nullable="false" />
+          <Property Name="ID_Usuario" Type="int" Nullable="false" />
+          <Property Name="Rol" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Empresa">
+          <Key>
+            <PropertyRef Name="ID_Empresa" />
+          </Key>
+          <Property Name="ID_Empresa" Type="int" Nullable="false" />
+          <Property Name="ID_Usuario" Type="int" />
+          <Property Name="RUC" Type="varchar" MaxLength="50" />
+          <Property Name="Correo" Type="varchar" MaxLength="50" />
+          <Property Name="Telefono" Type="varchar" MaxLength="30" />
+          <Property Name="Razon_social" Type="varchar" MaxLength="50" />
+          <Property Name="Empresa" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="Evento">
+          <Key>
+            <PropertyRef Name="ID_Evento" />
+          </Key>
+          <Property Name="ID_Evento" Type="int" Nullable="false" />
+          <Property Name="Titulo" Type="varchar" MaxLength="50" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+          <Property Name="Foto" Type="varchar" MaxLength="20" />
+          <Property Name="Lugar" Type="varchar" MaxLength="20" />
+          <Property Name="Costo" Type="int" />
+          <Property Name="Fecha" Type="datetime" />
+          <Property Name="Hora" Type="varchar" MaxLength="5" />
+          <Property Name="Fecha_pub" Type="datetime" />
+          <Property Name="Fecha_ini" Type="datetime" />
+          <Property Name="Fecha_fin" Type="datetime" />
+          <Property Name="ID_Usuario_crea" Type="int" />
+          <Property Name="ID_Usuario_mod" Type="int" />
+          <Property Name="Fecha_mod" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Historial_Hoja_Vida">
+          <Key>
+            <PropertyRef Name="ID_HojaVida" />
+            <PropertyRef Name="ID_Empresa" />
+          </Key>
+          <Property Name="ID_HojaVida" Type="int" Nullable="false" />
+          <Property Name="ID_Empresa" Type="int" Nullable="false" />
+          <Property Name="Cantidad_visita" Type="int" />
+        </EntityType>
+        <EntityType Name="Hoja_Vida">
+          <Key>
+            <PropertyRef Name="ID_HojaVida" />
+          </Key>
+          <Property Name="ID_HojaVida" Type="int" Nullable="false" />
+          <Property Name="ID_Alumno" Type="int" />
+          <Property Name="Foto" Type="image" />
+          <Property Name="Desc_perfil" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Invitado">
+          <Key>
+            <PropertyRef Name="ID_Invitado" />
+          </Key>
+          <Property Name="ID_Invitado" Type="int" Nullable="false" />
+          <Property Name="ID_Usuario" Type="int" />
+          <Property Name="Nombres" Type="varchar" MaxLength="50" />
+          <Property Name="Apellidos" Type="varchar" MaxLength="50" />
+          <Property Name="Correo" Type="varchar" MaxLength="50" />
+          <Property Name="Celular" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="Noticia">
+          <Key>
+            <PropertyRef Name="ID_Noticia" />
+          </Key>
+          <Property Name="ID_Noticia" Type="int" Nullable="false" />
+          <Property Name="Titulo" Type="varchar" MaxLength="50" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="600" />
+          <Property Name="Contenido" Type="text" />
+          <Property Name="Foto" Type="varchar" MaxLength="100" />
+          <Property Name="ID_Categoria" Type="int" />
+          <Property Name="Keywords" Type="varchar" MaxLength="100" />
+          <Property Name="Fecha_pub" Type="datetime" />
+          <Property Name="Estado" Type="int" />
+          <Property Name="ID_Usuario_crea" Type="int" />
+          <Property Name="Fecha_crea" Type="datetime" />
+          <Property Name="ID_Usuario_mod" Type="int" />
+          <Property Name="Fecha_mod" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Participantes">
+          <Key>
+            <PropertyRef Name="ID_Evento" />
+            <PropertyRef Name="ID_Usuario" />
+          </Key>
+          <Property Name="ID_Evento" Type="int" Nullable="false" />
+          <Property Name="ID_Usuario" Type="int" Nullable="false" />
+          <Property Name="FechaHoraReg" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Profesor">
+          <Key>
+            <PropertyRef Name="ID_Profesor" />
+          </Key>
+          <Property Name="ID_Profesor" Type="int" Nullable="false" />
+          <Property Name="ID_Usuario" Type="int" />
+          <Property Name="ID_Usuario_crea" Type="int" />
+          <Property Name="ID_Usuario_mod" Type="int" />
+          <Property Name="Nombres" Type="varchar" MaxLength="50" />
+          <Property Name="Apellidos" Type="varchar" MaxLength="50" />
+          <Property Name="Correo" Type="varchar" MaxLength="50" />
+          <Property Name="Celular" Type="varchar" MaxLength="30" />
+          <Property Name="Direccion" Type="varchar" MaxLength="50" />
+          <Property Name="Profesion" Type="varchar" MaxLength="30" />
+          <Property Name="Abstract" Type="varchar" MaxLength="50" />
+          <Property Name="DNI" Type="int" />
+          <Property Name="Estado" Type="int" />
+          <Property Name="Fecha_crea" Type="datetime" />
+          <Property Name="Fecha_mod" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Proyecto">
+          <Key>
+            <PropertyRef Name="ID_Proyecto" />
+          </Key>
+          <Property Name="ID_Proyecto" Type="int" Nullable="false" />
+          <Property Name="Titulo" Type="varchar" MaxLength="50" />
+          <Property Name="Abstract" Type="varchar" MaxLength="50" />
+          <Property Name="Keywords" Type="varchar" MaxLength="50" />
+          <Property Name="Fecha_pub" Type="varchar" MaxLength="15" />
+          <Property Name="Tipo" Type="varchar" MaxLength="15" />
+          <Property Name="Fecha_ini" Type="datetime" />
+          <Property Name="Fecha_fin" Type="datetime" />
+          <Property Name="Link_file" Type="varchar" MaxLength="20" />
+          <Property Name="Estado" Type="int" />
+          <Property Name="ID_Usuario_crea" Type="int" />
+        </EntityType>
+        <EntityType Name="Proyecto_Constr">
+          <Key>
+            <PropertyRef Name="ID_Proyecto" />
+            <PropertyRef Name="ID_Pers_Contr" />
+          </Key>
+          <Property Name="ID_Proyecto" Type="int" Nullable="false" />
+          <Property Name="ID_Pers_Contr" Type="int" Nullable="false" />
+          <Property Name="ID_Pers_Sup" Type="int" />
+          <Property Name="Comentario" Type="varchar" MaxLength="50" />
+          <Property Name="Link_file" Type="varchar" MaxLength="20" />
+          <Property Name="Fecha_Carga" Type="datetime" />
+          <Property Name="Estado" Type="int" />
+          <Property Name="Foto" Type="varchar" MaxLength="20" />
+          <Property Name="Referencia" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="ID_Usuario" />
+          </Key>
+          <Property Name="ID_Usuario" Type="int" Nullable="false" />
+          <Property Name="Username" Type="varchar" MaxLength="50" />
+          <Property Name="contraseña" Type="varchar" MaxLength="50" />
+          <Property Name="Estado" Type="int" />
+          <Property Name="Rol" Type="varchar" MaxLength="10" />
+          <Property Name="Fecha_crea" Type="datetime" />
+        </EntityType>
+        <Association Name="ID_Alumno_fk">
+          <End Role="Alumno" Type="Self.Alumno" Multiplicity="0..1" />
+          <End Role="Hoja_Vida" Type="Self.Hoja_Vida" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Alumno">
+              <PropertyRef Name="ID_Alumno" />
+            </Principal>
+            <Dependent Role="Hoja_Vida">
+              <PropertyRef Name="ID_Alumno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_ArchivoI_fk">
+          <End Role="Archivo_Investigacion" Type="Self.Archivo_Investigacion" Multiplicity="1" />
+          <End Role="Det_Archivo_Inv" Type="Self.Det_Archivo_Inv" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Archivo_Investigacion">
+              <PropertyRef Name="ID_ArchivoI" />
+            </Principal>
+            <Dependent Role="Det_Archivo_Inv">
+              <PropertyRef Name="ID_ArchivoI" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_ArchivoI_fk1">
+          <End Role="Archivo_Investigacion" Type="Self.Archivo_Investigacion" Multiplicity="1" />
+          <End Role="Descarga_ArchivoI" Type="Self.Descarga_ArchivoI" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Archivo_Investigacion">
+              <PropertyRef Name="ID_ArchivoI" />
+            </Principal>
+            <Dependent Role="Descarga_ArchivoI">
+              <PropertyRef Name="ID_ArchivoI" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_ArchivoI_fk2">
+          <End Role="Archivo_Investigacion" Type="Self.Archivo_Investigacion" Multiplicity="1" />
+          <End Role="ArchivoI_Proyecto" Type="Self.ArchivoI_Proyecto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Archivo_Investigacion">
+              <PropertyRef Name="ID_ArchivoI" />
+            </Principal>
+            <Dependent Role="ArchivoI_Proyecto">
+              <PropertyRef Name="ID_ArchivoI" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Categoria_fk">
+          <End Role="Categoria" Type="Self.Categoria" Multiplicity="0..1" />
+          <End Role="Noticia" Type="Self.Noticia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categoria">
+              <PropertyRef Name="ID_Categoria" />
+            </Principal>
+            <Dependent Role="Noticia">
+              <PropertyRef Name="ID_Categoria" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Det_Conoc_adic_fk5">
+          <End Role="Hoja_Vida" Type="Self.Hoja_Vida" Multiplicity="1" />
+          <End Role="Det_Conoc_adic" Type="Self.Det_Conoc_adic" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Hoja_Vida">
+              <PropertyRef Name="ID_HojaVida" />
+            </Principal>
+            <Dependent Role="Det_Conoc_adic">
+              <PropertyRef Name="ID_HojaVida" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Det_Idiomas_fk4">
+          <End Role="Hoja_Vida" Type="Self.Hoja_Vida" Multiplicity="1" />
+          <End Role="Det_Idiomas" Type="Self.Det_Idiomas" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Hoja_Vida">
+              <PropertyRef Name="ID_HojaVida" />
+            </Principal>
+            <Dependent Role="Det_Idiomas">
+              <PropertyRef Name="ID_HojaVida" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Det_Logro_fk">
+          <End Role="Hoja_Vida" Type="Self.Hoja_Vida" Multiplicity="1" />
+          <End Role="Det_Logro" Type="Self.Det_Logro" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Hoja_Vida">
+              <PropertyRef Name="ID_HojaVida" />
+            </Principal>
+            <Dependent Role="Det_Logro">
+              <PropertyRef Name="ID_HojaVida" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Empresa_fk">
+          <End Role="Empresa" Type="Self.Empresa" Multiplicity="1" />
+          <End Role="Historial_Hoja_Vida" Type="Self.Historial_Hoja_Vida" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empresa">
+              <PropertyRef Name="ID_Empresa" />
+            </Principal>
+            <Dependent Role="Historial_Hoja_Vida">
+              <PropertyRef Name="ID_Empresa" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Evento_fk">
+          <End Role="Evento" Type="Self.Evento" Multiplicity="1" />
+          <End Role="Participantes" Type="Self.Participantes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Evento">
+              <PropertyRef Name="ID_Evento" />
+            </Principal>
+            <Dependent Role="Participantes">
+              <PropertyRef Name="ID_Evento" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_HojaVida_fk">
+          <End Role="Hoja_Vida" Type="Self.Hoja_Vida" Multiplicity="1" />
+          <End Role="Det_Certificado" Type="Self.Det_Certificado" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Hoja_Vida">
+              <PropertyRef Name="ID_HojaVida" />
+            </Principal>
+            <Dependent Role="Det_Certificado">
+              <PropertyRef Name="ID_HojaVida" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_HojaVida_fk1">
+          <End Role="Hoja_Vida" Type="Self.Hoja_Vida" Multiplicity="1" />
+          <End Role="Det_Exp_Laboral" Type="Self.Det_Exp_Laboral" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Hoja_Vida">
+              <PropertyRef Name="ID_HojaVida" />
+            </Principal>
+            <Dependent Role="Det_Exp_Laboral">
+              <PropertyRef Name="ID_HojaVida" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_HojaVida_fk2">
+          <End Role="Hoja_Vida" Type="Self.Hoja_Vida" Multiplicity="1" />
+          <End Role="Det_Form_Acad" Type="Self.Det_Form_Acad" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Hoja_Vida">
+              <PropertyRef Name="ID_HojaVida" />
+            </Principal>
+            <Dependent Role="Det_Form_Acad">
+              <PropertyRef Name="ID_HojaVida" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_HojaVida_fk3">
+          <End Role="Hoja_Vida" Type="Self.Hoja_Vida" Multiplicity="1" />
+          <End Role="Historial_Hoja_Vida" Type="Self.Historial_Hoja_Vida" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Hoja_Vida">
+              <PropertyRef Name="ID_HojaVida" />
+            </Principal>
+            <Dependent Role="Historial_Hoja_Vida">
+              <PropertyRef Name="ID_HojaVida" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Noticia_fk">
+          <End Role="Noticia" Type="Self.Noticia" Multiplicity="0..1" />
+          <End Role="Comentario" Type="Self.Comentario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Noticia">
+              <PropertyRef Name="ID_Noticia" />
+            </Principal>
+            <Dependent Role="Comentario">
+              <PropertyRef Name="ID_Noticia" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Pers_Contr_fk">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+          <End Role="Proyecto_Constr" Type="Self.Proyecto_Constr" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Proyecto_Constr">
+              <PropertyRef Name="ID_Pers_Contr" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Pers_Sup_fk">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Proyecto_Constr" Type="Self.Proyecto_Constr" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Proyecto_Constr">
+              <PropertyRef Name="ID_Pers_Sup" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Profesor_fk">
+          <End Role="Profesor" Type="Self.Profesor" Multiplicity="0..1" />
+          <End Role="Curso" Type="Self.Curso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Profesor">
+              <PropertyRef Name="ID_Profesor" />
+            </Principal>
+            <Dependent Role="Curso">
+              <PropertyRef Name="ID_Profesor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Proyecto_fk">
+          <End Role="Proyecto" Type="Self.Proyecto" Multiplicity="0..1" />
+          <End Role="Archivo_Investigacion" Type="Self.Archivo_Investigacion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proyecto">
+              <PropertyRef Name="ID_Proyecto" />
+            </Principal>
+            <Dependent Role="Archivo_Investigacion">
+              <PropertyRef Name="ID_Proyecto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Proyecto_fk1">
+          <End Role="Proyecto" Type="Self.Proyecto" Multiplicity="1" />
+          <End Role="Det_Partic_Proyecto" Type="Self.Det_Partic_Proyecto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proyecto">
+              <PropertyRef Name="ID_Proyecto" />
+            </Principal>
+            <Dependent Role="Det_Partic_Proyecto">
+              <PropertyRef Name="ID_Proyecto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Proyecto_fk2">
+          <End Role="Proyecto" Type="Self.Proyecto" Multiplicity="1" />
+          <End Role="Proyecto_Constr" Type="Self.Proyecto_Constr" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proyecto">
+              <PropertyRef Name="ID_Proyecto" />
+            </Principal>
+            <Dependent Role="Proyecto_Constr">
+              <PropertyRef Name="ID_Proyecto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Proyecto_fk3">
+          <End Role="Proyecto" Type="Self.Proyecto" Multiplicity="1" />
+          <End Role="ArchivoI_Proyecto" Type="Self.ArchivoI_Proyecto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proyecto">
+              <PropertyRef Name="ID_Proyecto" />
+            </Principal>
+            <Dependent Role="ArchivoI_Proyecto">
+              <PropertyRef Name="ID_Proyecto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_crea_fk">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Profesor" Type="Self.Profesor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Profesor">
+              <PropertyRef Name="ID_Usuario_crea" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_crea_fk1">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Alumno" Type="Self.Alumno" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Alumno">
+              <PropertyRef Name="ID_Usuario_crea" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_crea_fk2">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Proyecto" Type="Self.Proyecto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Proyecto">
+              <PropertyRef Name="ID_Usuario_crea" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_crea_fk3">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Archivo_Investigacion" Type="Self.Archivo_Investigacion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Archivo_Investigacion">
+              <PropertyRef Name="ID_Usuario_crea" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_crea_fk4">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Evento" Type="Self.Evento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Evento">
+              <PropertyRef Name="ID_Usuario_crea" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_crea_fk5">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Noticia" Type="Self.Noticia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Noticia">
+              <PropertyRef Name="ID_Usuario_crea" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_fk">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Profesor" Type="Self.Profesor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Profesor">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_fk1">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Alumno" Type="Self.Alumno" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Alumno">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_fk2">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Invitado" Type="Self.Invitado" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Invitado">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_fk3">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Empresa" Type="Self.Empresa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Empresa">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_fk4">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+          <End Role="Det_Partic_Proyecto" Type="Self.Det_Partic_Proyecto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Det_Partic_Proyecto">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_fk5">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+          <End Role="Det_Archivo_Inv" Type="Self.Det_Archivo_Inv" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Det_Archivo_Inv">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_fk6">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+          <End Role="Descarga_ArchivoI" Type="Self.Descarga_ArchivoI" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Descarga_ArchivoI">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_fk7">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Clic" Type="Self.Clic" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Clic">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_fk8">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Comentario" Type="Self.Comentario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Comentario">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_fk9">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+          <End Role="Participantes" Type="Self.Participantes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Participantes">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_mod_fk">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Profesor" Type="Self.Profesor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Profesor">
+              <PropertyRef Name="ID_Usuario_mod" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_mod_fk1">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Alumno" Type="Self.Alumno" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Alumno">
+              <PropertyRef Name="ID_Usuario_mod" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_mod_fk2">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Archivo_Investigacion" Type="Self.Archivo_Investigacion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Archivo_Investigacion">
+              <PropertyRef Name="ID_Usuario_mod" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_mod_fk3">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Evento" Type="Self.Evento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Evento">
+              <PropertyRef Name="ID_Usuario_mod" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_mod_fk4">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Noticia" Type="Self.Noticia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Noticia">
+              <PropertyRef Name="ID_Usuario_mod" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="WebModel1StoreContainer">
+          <EntitySet Name="Alumno" EntityType="Self.Alumno" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Archivo_Investigacion" EntityType="Self.Archivo_Investigacion" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ArchivoI_Proyecto" EntityType="Self.ArchivoI_Proyecto" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Categoria" EntityType="Self.Categoria" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Clic" EntityType="Self.Clic" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Comentario" EntityType="Self.Comentario" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Conoc_adic" EntityType="Self.Conoc_adic" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Curso" EntityType="Self.Curso" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Descarga_ArchivoI" EntityType="Self.Descarga_ArchivoI" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Det_Archivo_Inv" EntityType="Self.Det_Archivo_Inv" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Det_Certificado" EntityType="Self.Det_Certificado" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Det_Conoc_adic" EntityType="Self.Det_Conoc_adic" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Det_Exp_Laboral" EntityType="Self.Det_Exp_Laboral" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Det_Form_Acad" EntityType="Self.Det_Form_Acad" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Det_Idiomas" EntityType="Self.Det_Idiomas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Det_Logro" EntityType="Self.Det_Logro" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Det_Partic_Proyecto" EntityType="Self.Det_Partic_Proyecto" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Empresa" EntityType="Self.Empresa" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Evento" EntityType="Self.Evento" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Historial_Hoja_Vida" EntityType="Self.Historial_Hoja_Vida" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Hoja_Vida" EntityType="Self.Hoja_Vida" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Invitado" EntityType="Self.Invitado" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Noticia" EntityType="Self.Noticia" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Participantes" EntityType="Self.Participantes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Profesor" EntityType="Self.Profesor" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Proyecto" EntityType="Self.Proyecto" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Proyecto_Constr" EntityType="Self.Proyecto_Constr" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="ID_Alumno_fk" Association="Self.ID_Alumno_fk">
+            <End Role="Alumno" EntitySet="Alumno" />
+            <End Role="Hoja_Vida" EntitySet="Hoja_Vida" />
+          </AssociationSet>
+          <AssociationSet Name="ID_ArchivoI_fk" Association="Self.ID_ArchivoI_fk">
+            <End Role="Archivo_Investigacion" EntitySet="Archivo_Investigacion" />
+            <End Role="Det_Archivo_Inv" EntitySet="Det_Archivo_Inv" />
+          </AssociationSet>
+          <AssociationSet Name="ID_ArchivoI_fk1" Association="Self.ID_ArchivoI_fk1">
+            <End Role="Archivo_Investigacion" EntitySet="Archivo_Investigacion" />
+            <End Role="Descarga_ArchivoI" EntitySet="Descarga_ArchivoI" />
+          </AssociationSet>
+          <AssociationSet Name="ID_ArchivoI_fk2" Association="Self.ID_ArchivoI_fk2">
+            <End Role="Archivo_Investigacion" EntitySet="Archivo_Investigacion" />
+            <End Role="ArchivoI_Proyecto" EntitySet="ArchivoI_Proyecto" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Categoria_fk" Association="Self.ID_Categoria_fk">
+            <End Role="Categoria" EntitySet="Categoria" />
+            <End Role="Noticia" EntitySet="Noticia" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Det_Conoc_adic_fk5" Association="Self.ID_Det_Conoc_adic_fk5">
+            <End Role="Hoja_Vida" EntitySet="Hoja_Vida" />
+            <End Role="Det_Conoc_adic" EntitySet="Det_Conoc_adic" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Det_Idiomas_fk4" Association="Self.ID_Det_Idiomas_fk4">
+            <End Role="Hoja_Vida" EntitySet="Hoja_Vida" />
+            <End Role="Det_Idiomas" EntitySet="Det_Idiomas" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Det_Logro_fk" Association="Self.ID_Det_Logro_fk">
+            <End Role="Hoja_Vida" EntitySet="Hoja_Vida" />
+            <End Role="Det_Logro" EntitySet="Det_Logro" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Empresa_fk" Association="Self.ID_Empresa_fk">
+            <End Role="Empresa" EntitySet="Empresa" />
+            <End Role="Historial_Hoja_Vida" EntitySet="Historial_Hoja_Vida" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Evento_fk" Association="Self.ID_Evento_fk">
+            <End Role="Evento" EntitySet="Evento" />
+            <End Role="Participantes" EntitySet="Participantes" />
+          </AssociationSet>
+          <AssociationSet Name="ID_HojaVida_fk" Association="Self.ID_HojaVida_fk">
+            <End Role="Hoja_Vida" EntitySet="Hoja_Vida" />
+            <End Role="Det_Certificado" EntitySet="Det_Certificado" />
+          </AssociationSet>
+          <AssociationSet Name="ID_HojaVida_fk1" Association="Self.ID_HojaVida_fk1">
+            <End Role="Hoja_Vida" EntitySet="Hoja_Vida" />
+            <End Role="Det_Exp_Laboral" EntitySet="Det_Exp_Laboral" />
+          </AssociationSet>
+          <AssociationSet Name="ID_HojaVida_fk2" Association="Self.ID_HojaVida_fk2">
+            <End Role="Hoja_Vida" EntitySet="Hoja_Vida" />
+            <End Role="Det_Form_Acad" EntitySet="Det_Form_Acad" />
+          </AssociationSet>
+          <AssociationSet Name="ID_HojaVida_fk3" Association="Self.ID_HojaVida_fk3">
+            <End Role="Hoja_Vida" EntitySet="Hoja_Vida" />
+            <End Role="Historial_Hoja_Vida" EntitySet="Historial_Hoja_Vida" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Noticia_fk" Association="Self.ID_Noticia_fk">
+            <End Role="Noticia" EntitySet="Noticia" />
+            <End Role="Comentario" EntitySet="Comentario" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Pers_Contr_fk" Association="Self.ID_Pers_Contr_fk">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Proyecto_Constr" EntitySet="Proyecto_Constr" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Pers_Sup_fk" Association="Self.ID_Pers_Sup_fk">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Proyecto_Constr" EntitySet="Proyecto_Constr" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Profesor_fk" Association="Self.ID_Profesor_fk">
+            <End Role="Profesor" EntitySet="Profesor" />
+            <End Role="Curso" EntitySet="Curso" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Proyecto_fk" Association="Self.ID_Proyecto_fk">
+            <End Role="Proyecto" EntitySet="Proyecto" />
+            <End Role="Archivo_Investigacion" EntitySet="Archivo_Investigacion" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Proyecto_fk1" Association="Self.ID_Proyecto_fk1">
+            <End Role="Proyecto" EntitySet="Proyecto" />
+            <End Role="Det_Partic_Proyecto" EntitySet="Det_Partic_Proyecto" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Proyecto_fk2" Association="Self.ID_Proyecto_fk2">
+            <End Role="Proyecto" EntitySet="Proyecto" />
+            <End Role="Proyecto_Constr" EntitySet="Proyecto_Constr" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Proyecto_fk3" Association="Self.ID_Proyecto_fk3">
+            <End Role="Proyecto" EntitySet="Proyecto" />
+            <End Role="ArchivoI_Proyecto" EntitySet="ArchivoI_Proyecto" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_crea_fk" Association="Self.ID_Usuario_crea_fk">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Profesor" EntitySet="Profesor" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_crea_fk1" Association="Self.ID_Usuario_crea_fk1">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Alumno" EntitySet="Alumno" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_crea_fk2" Association="Self.ID_Usuario_crea_fk2">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Proyecto" EntitySet="Proyecto" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_crea_fk3" Association="Self.ID_Usuario_crea_fk3">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Archivo_Investigacion" EntitySet="Archivo_Investigacion" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_crea_fk4" Association="Self.ID_Usuario_crea_fk4">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Evento" EntitySet="Evento" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_crea_fk5" Association="Self.ID_Usuario_crea_fk5">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Noticia" EntitySet="Noticia" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_fk" Association="Self.ID_Usuario_fk">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Profesor" EntitySet="Profesor" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_fk1" Association="Self.ID_Usuario_fk1">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Alumno" EntitySet="Alumno" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_fk2" Association="Self.ID_Usuario_fk2">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Invitado" EntitySet="Invitado" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_fk3" Association="Self.ID_Usuario_fk3">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Empresa" EntitySet="Empresa" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_fk4" Association="Self.ID_Usuario_fk4">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Det_Partic_Proyecto" EntitySet="Det_Partic_Proyecto" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_fk5" Association="Self.ID_Usuario_fk5">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Det_Archivo_Inv" EntitySet="Det_Archivo_Inv" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_fk6" Association="Self.ID_Usuario_fk6">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Descarga_ArchivoI" EntitySet="Descarga_ArchivoI" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_fk7" Association="Self.ID_Usuario_fk7">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Clic" EntitySet="Clic" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_fk8" Association="Self.ID_Usuario_fk8">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Comentario" EntitySet="Comentario" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_fk9" Association="Self.ID_Usuario_fk9">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Participantes" EntitySet="Participantes" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_mod_fk" Association="Self.ID_Usuario_mod_fk">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Profesor" EntitySet="Profesor" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_mod_fk1" Association="Self.ID_Usuario_mod_fk1">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Alumno" EntitySet="Alumno" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_mod_fk2" Association="Self.ID_Usuario_mod_fk2">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Archivo_Investigacion" EntitySet="Archivo_Investigacion" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_mod_fk3" Association="Self.ID_Usuario_mod_fk3">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Evento" EntitySet="Evento" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_mod_fk4" Association="Self.ID_Usuario_mod_fk4">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Noticia" EntitySet="Noticia" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="WebModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Alumno">
+          <Key>
+            <PropertyRef Name="ID_Alumno" />
+          </Key>
+          <Property Name="ID_Alumno" Type="Int32" Nullable="false" />
+          <Property Name="ID_Usuario" Type="Int32" />
+          <Property Name="ID_Usuario_crea" Type="Int32" />
+          <Property Name="ID_Usuario_mod" Type="Int32" />
+          <Property Name="Nombres" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Codigo" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="Correo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Celular" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Ciclo" Type="Int32" />
+          <Property Name="DNI" Type="Int32" />
+          <Property Name="Fecha_Nacimiento" Type="DateTime" Precision="3" />
+          <Property Name="Estado" Type="Int32" />
+          <Property Name="Tipo" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Testimonio" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Puesto_empresa" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Promocion" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Hoja_Vida" Relationship="Self.ID_Alumno_fk" FromRole="Alumno" ToRole="Hoja_Vida" />
+          <NavigationProperty Name="Usuario" Relationship="Self.ID_Usuario_crea_fk1" FromRole="Alumno" ToRole="Usuario" />
+          <NavigationProperty Name="Usuario1" Relationship="Self.ID_Usuario_fk1" FromRole="Alumno" ToRole="Usuario" />
+          <NavigationProperty Name="Usuario2" Relationship="Self.ID_Usuario_mod_fk1" FromRole="Alumno" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="Archivo_Investigacion">
+          <Key>
+            <PropertyRef Name="ID_ArchivoI" />
+          </Key>
+          <Property Name="ID_ArchivoI" Type="Int32" Nullable="false" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_invest" Type="DateTime" Precision="3" />
+          <Property Name="Fecha_pub_ini" Type="DateTime" Precision="3" />
+          <Property Name="Fecha_pub_fin" Type="DateTime" Precision="3" />
+          <Property Name="Foto" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Estado" Type="Int32" />
+          <Property Name="Referencia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_crea" Type="DateTime" Precision="3" />
+          <Property Name="ID_Usuario_crea" Type="Int32" />
+          <Property Name="Fecha_mod" Type="DateTime" Precision="3" />
+          <Property Name="ID_Usuario_mod" Type="Int32" />
+          <Property Name="Link_file" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Keywords" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ID_Proyecto" Type="Int32" />
+          <Property Name="AI_Externo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="Det_Archivo_Inv" Relationship="Self.ID_ArchivoI_fk" FromRole="Archivo_Investigacion" ToRole="Det_Archivo_Inv" />
+          <NavigationProperty Name="Descarga_ArchivoI" Relationship="Self.ID_ArchivoI_fk1" FromRole="Archivo_Investigacion" ToRole="Descarga_ArchivoI" />
+          <NavigationProperty Name="Proyecto" Relationship="Self.ID_Proyecto_fk" FromRole="Archivo_Investigacion" ToRole="Proyecto" />
+          <NavigationProperty Name="Usuario" Relationship="Self.ID_Usuario_crea_fk3" FromRole="Archivo_Investigacion" ToRole="Usuario" />
+          <NavigationProperty Name="Usuario1" Relationship="Self.ID_Usuario_mod_fk2" FromRole="Archivo_Investigacion" ToRole="Usuario" />
+          <NavigationProperty Name="Proyecto1" Relationship="Self.ArchivoI_Proyecto" FromRole="Archivo_Investigacion" ToRole="Proyecto" />
+        </EntityType>
+        <EntityType Name="Categoria">
+          <Key>
+            <PropertyRef Name="ID_Categoria" />
+          </Key>
+          <Property Name="ID_Categoria" Type="Int32" Nullable="false" />
+          <Property Name="Categoria1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Noticia" Relationship="Self.ID_Categoria_fk" FromRole="Categoria" ToRole="Noticia" />
+        </EntityType>
+        <EntityType Name="Clic">
+          <Key>
+            <PropertyRef Name="ID_Clic" />
+          </Key>
+          <Property Name="ID_Clic" Type="Int32" Nullable="false" />
+          <Property Name="ID_Usuario" Type="Int32" />
+          <Property Name="Cont_ArchivoI" Type="Int32" />
+          <Property Name="Cont_Noticias" Type="Int32" />
+          <Property Name="Cont_Eventos" Type="Int32" />
+          <Property Name="Cont_AcercaDe" Type="Int32" />
+          <Property Name="Cont_Proyectos" Type="Int32" />
+          <Property Name="FechaHora" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Usuario" Relationship="Self.ID_Usuario_fk7" FromRole="Clic" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="Comentario">
+          <Key>
+            <PropertyRef Name="ID_Comentario" />
+          </Key>
+          <Property Name="ID_Comentario" Type="Int32" Nullable="false" />
+          <Property Name="ID_Noticia" Type="Int32" />
+          <Property Name="ID_Usuario" Type="Int32" />
+          <Property Name="Contenido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_pub" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Noticia" Relationship="Self.ID_Noticia_fk" FromRole="Comentario" ToRole="Noticia" />
+          <NavigationProperty Name="Usuario" Relationship="Self.ID_Usuario_fk8" FromRole="Comentario" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="Conoc_adic">
+          <Key>
+            <PropertyRef Name="ID_Conoc_adic" />
+          </Key>
+          <Property Name="ID_Conoc_adic" Type="Int32" Nullable="false" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Curso">
+          <Key>
+            <PropertyRef Name="ID_Curso" />
+          </Key>
+          <Property Name="ID_Curso" Type="Int32" Nullable="false" />
+          <Property Name="ID_Profesor" Type="Int32" />
+          <Property Name="Nombre" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Horario" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Creditos" Type="Int32" />
+          <NavigationProperty Name="Profesor" Relationship="Self.ID_Profesor_fk" FromRole="Curso" ToRole="Profesor" />
+        </EntityType>
+        <EntityType Name="Descarga_ArchivoI">
+          <Key>
+            <PropertyRef Name="ID_ArchivoI" />
+            <PropertyRef Name="ID_Usuario" />
+          </Key>
+          <Property Name="ID_ArchivoI" Type="Int32" Nullable="false" />
+          <Property Name="ID_Usuario" Type="Int32" Nullable="false" />
+          <Property Name="Fecha" Type="DateTime" Precision="3" />
+          <Property Name="Cont_descargas" Type="Int32" />
+          <NavigationProperty Name="Archivo_Investigacion" Relationship="Self.ID_ArchivoI_fk1" FromRole="Descarga_ArchivoI" ToRole="Archivo_Investigacion" />
+          <NavigationProperty Name="Usuario" Relationship="Self.ID_Usuario_fk6" FromRole="Descarga_ArchivoI" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="Det_Archivo_Inv">
+          <Key>
+            <PropertyRef Name="ID_ArchivoI" />
+            <PropertyRef Name="ID_Usuario" />
+          </Key>
+          <Property Name="ID_ArchivoI" Type="Int32" Nullable="false" />
+          <Property Name="ID_Usuario" Type="Int32" Nullable="false" />
+          <Property Name="Rol" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Archivo_Investigacion" Relationship="Self.ID_ArchivoI_fk" FromRole="Det_Archivo_Inv" ToRole="Archivo_Investigacion" />
+          <NavigationProperty Name="Usuario" Relationship="Self.ID_Usuario_fk5" FromRole="Det_Archivo_Inv" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="Det_Certificado">
+          <Key>
+            <PropertyRef Name="ID_HojaVida" />
+          </Key>
+          <Property Name="ID_HojaVida" Type="Int32" Nullable="false" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Institucion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_Ini" Type="DateTime" Precision="3" />
+          <Property Name="Fecha_Fin" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Hoja_Vida" Relationship="Self.ID_HojaVida_fk" FromRole="Det_Certificado" ToRole="Hoja_Vida" />
+        </EntityType>
+        <EntityType Name="Det_Conoc_adic">
+          <Key>
+            <PropertyRef Name="ID_HojaVida" />
+          </Key>
+          <Property Name="ID_HojaVida" Type="Int32" Nullable="false" />
+          <Property Name="Tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Herramienta" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Nivel" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Hoja_Vida" Relationship="Self.ID_Det_Conoc_adic_fk5" FromRole="Det_Conoc_adic" ToRole="Hoja_Vida" />
+        </EntityType>
+        <EntityType Name="Det_Exp_Laboral">
+          <Key>
+            <PropertyRef Name="ID_HojaVida" />
+          </Key>
+          <Property Name="ID_HojaVida" Type="Int32" Nullable="false" />
+          <Property Name="Empresa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_Ini" Type="DateTime" Precision="3" />
+          <Property Name="Fecha_Fin" Type="DateTime" Precision="3" />
+          <Property Name="Rol" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Comentario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Referencia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Hoja_Vida" Relationship="Self.ID_HojaVida_fk1" FromRole="Det_Exp_Laboral" ToRole="Hoja_Vida" />
+        </EntityType>
+        <EntityType Name="Det_Form_Acad">
+          <Key>
+            <PropertyRef Name="ID_HojaVida" />
+          </Key>
+          <Property Name="ID_HojaVida" Type="Int32" Nullable="false" />
+          <Property Name="Grado_acad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Carrera" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Institucion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_Ini" Type="DateTime" Precision="3" />
+          <Property Name="Fecha_Fin" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Hoja_Vida" Relationship="Self.ID_HojaVida_fk2" FromRole="Det_Form_Acad" ToRole="Hoja_Vida" />
+        </EntityType>
+        <EntityType Name="Det_Idiomas">
+          <Key>
+            <PropertyRef Name="ID_HojaVida" />
+          </Key>
+          <Property Name="ID_HojaVida" Type="Int32" Nullable="false" />
+          <Property Name="Institución" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Idioma" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NOral" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NEscrito" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NLectura" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Hoja_Vida" Relationship="Self.ID_Det_Idiomas_fk4" FromRole="Det_Idiomas" ToRole="Hoja_Vida" />
+        </EntityType>
+        <EntityType Name="Det_Logro">
+          <Key>
+            <PropertyRef Name="ID_HojaVida" />
+          </Key>
+          <Property Name="ID_HojaVida" Type="Int32" Nullable="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Hoja_Vida" Relationship="Self.ID_Det_Logro_fk" FromRole="Det_Logro" ToRole="Hoja_Vida" />
+        </EntityType>
+        <EntityType Name="Det_Partic_Proyecto">
+          <Key>
+            <PropertyRef Name="ID_Proyecto" />
+            <PropertyRef Name="ID_Usuario" />
+          </Key>
+          <Property Name="ID_Proyecto" Type="Int32" Nullable="false" />
+          <Property Name="ID_Usuario" Type="Int32" Nullable="false" />
+          <Property Name="Rol" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Proyecto" Relationship="Self.ID_Proyecto_fk1" FromRole="Det_Partic_Proyecto" ToRole="Proyecto" />
+          <NavigationProperty Name="Usuario" Relationship="Self.ID_Usuario_fk4" FromRole="Det_Partic_Proyecto" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="Empresa">
+          <Key>
+            <PropertyRef Name="ID_Empresa" />
+          </Key>
+          <Property Name="ID_Empresa" Type="Int32" Nullable="false" />
+          <Property Name="ID_Usuario" Type="Int32" />
+          <Property Name="RUC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Correo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Telefono" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Razon_social" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Empresa1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Historial_Hoja_Vida" Relationship="Self.ID_Empresa_fk" FromRole="Empresa" ToRole="Historial_Hoja_Vida" />
+          <NavigationProperty Name="Usuario" Relationship="Self.ID_Usuario_fk3" FromRole="Empresa" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="Evento">
+          <Key>
+            <PropertyRef Name="ID_Evento" />
+          </Key>
+          <Property Name="ID_Evento" Type="Int32" Nullable="false" />
+          <Property Name="Titulo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Foto" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Lugar" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Costo" Type="Int32" />
+          <Property Name="Fecha" Type="DateTime" Precision="3" />
+          <Property Name="Hora" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_pub" Type="DateTime" Precision="3" />
+          <Property Name="Fecha_ini" Type="DateTime" Precision="3" />
+          <Property Name="Fecha_fin" Type="DateTime" Precision="3" />
+          <Property Name="ID_Usuario_crea" Type="Int32" />
+          <Property Name="ID_Usuario_mod" Type="Int32" />
+          <Property Name="Fecha_mod" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Participantes" Relationship="Self.ID_Evento_fk" FromRole="Evento" ToRole="Participantes" />
+          <NavigationProperty Name="Usuario" Relationship="Self.ID_Usuario_crea_fk4" FromRole="Evento" ToRole="Usuario" />
+          <NavigationProperty Name="Usuario1" Relationship="Self.ID_Usuario_mod_fk3" FromRole="Evento" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="Historial_Hoja_Vida">
+          <Key>
+            <PropertyRef Name="ID_HojaVida" />
+            <PropertyRef Name="ID_Empresa" />
+          </Key>
+          <Property Name="ID_HojaVida" Type="Int32" Nullable="false" />
+          <Property Name="ID_Empresa" Type="Int32" Nullable="false" />
+          <Property Name="Cantidad_visita" Type="Int32" />
+          <NavigationProperty Name="Empresa" Relationship="Self.ID_Empresa_fk" FromRole="Historial_Hoja_Vida" ToRole="Empresa" />
+          <NavigationProperty Name="Hoja_Vida" Relationship="Self.ID_HojaVida_fk3" FromRole="Historial_Hoja_Vida" ToRole="Hoja_Vida" />
+        </EntityType>
+        <EntityType Name="Hoja_Vida">
+          <Key>
+            <PropertyRef Name="ID_HojaVida" />
+          </Key>
+          <Property Name="ID_HojaVida" Type="Int32" Nullable="false" />
+          <Property Name="ID_Alumno" Type="Int32" />
+          <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Desc_perfil" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Alumno" Relationship="Self.ID_Alumno_fk" FromRole="Hoja_Vida" ToRole="Alumno" />
+          <NavigationProperty Name="Det_Certificado" Relationship="Self.ID_HojaVida_fk" FromRole="Hoja_Vida" ToRole="Det_Certificado" />
+          <NavigationProperty Name="Det_Conoc_adic" Relationship="Self.ID_Det_Conoc_adic_fk5" FromRole="Hoja_Vida" ToRole="Det_Conoc_adic" />
+          <NavigationProperty Name="Det_Exp_Laboral" Relationship="Self.ID_HojaVida_fk1" FromRole="Hoja_Vida" ToRole="Det_Exp_Laboral" />
+          <NavigationProperty Name="Det_Form_Acad" Relationship="Self.ID_HojaVida_fk2" FromRole="Hoja_Vida" ToRole="Det_Form_Acad" />
+          <NavigationProperty Name="Det_Idiomas" Relationship="Self.ID_Det_Idiomas_fk4" FromRole="Hoja_Vida" ToRole="Det_Idiomas" />
+          <NavigationProperty Name="Det_Logro" Relationship="Self.ID_Det_Logro_fk" FromRole="Hoja_Vida" ToRole="Det_Logro" />
+          <NavigationProperty Name="Historial_Hoja_Vida" Relationship="Self.ID_HojaVida_fk3" FromRole="Hoja_Vida" ToRole="Historial_Hoja_Vida" />
+        </EntityType>
+        <EntityType Name="Invitado">
+          <Key>
+            <PropertyRef Name="ID_Invitado" />
+          </Key>
+          <Property Name="ID_Invitado" Type="Int32" Nullable="false" />
+          <Property Name="ID_Usuario" Type="Int32" />
+          <Property Name="Nombres" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Correo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Celular" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Usuario" Relationship="Self.ID_Usuario_fk2" FromRole="Invitado" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="Noticia">
+          <Key>
+            <PropertyRef Name="ID_Noticia" />
+          </Key>
+          <Property Name="ID_Noticia" Type="Int32" Nullable="false" />
+          <Property Name="Titulo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="600" FixedLength="false" Unicode="false" />
+          <Property Name="Contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Foto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ID_Categoria" Type="Int32" />
+          <Property Name="Keywords" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_pub" Type="DateTime" Precision="3" />
+          <Property Name="Estado" Type="Int32" />
+          <Property Name="ID_Usuario_crea" Type="Int32" />
+          <Property Name="Fecha_crea" Type="DateTime" Precision="3" />
+          <Property Name="ID_Usuario_mod" Type="Int32" />
+          <Property Name="Fecha_mod" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Categoria" Relationship="Self.ID_Categoria_fk" FromRole="Noticia" ToRole="Categoria" />
+          <NavigationProperty Name="Comentario" Relationship="Self.ID_Noticia_fk" FromRole="Noticia" ToRole="Comentario" />
+          <NavigationProperty Name="Usuario" Relationship="Self.ID_Usuario_crea_fk5" FromRole="Noticia" ToRole="Usuario" />
+          <NavigationProperty Name="Usuario1" Relationship="Self.ID_Usuario_mod_fk4" FromRole="Noticia" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="Participantes">
+          <Key>
+            <PropertyRef Name="ID_Evento" />
+            <PropertyRef Name="ID_Usuario" />
+          </Key>
+          <Property Name="ID_Evento" Type="Int32" Nullable="false" />
+          <Property Name="ID_Usuario" Type="Int32" Nullable="false" />
+          <Property Name="FechaHoraReg" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Evento" Relationship="Self.ID_Evento_fk" FromRole="Participantes" ToRole="Evento" />
+          <NavigationProperty Name="Usuario" Relationship="Self.ID_Usuario_fk9" FromRole="Participantes" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="Profesor">
+          <Key>
+            <PropertyRef Name="ID_Profesor" />
+          </Key>
+          <Property Name="ID_Profesor" Type="Int32" Nullable="false" />
+          <Property Name="ID_Usuario" Type="Int32" />
+          <Property Name="ID_Usuario_crea" Type="Int32" />
+          <Property Name="ID_Usuario_mod" Type="Int32" />
+          <Property Name="Nombres" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Correo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Celular" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Profesion" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Abstract" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DNI" Type="Int32" />
+          <Property Name="Estado" Type="Int32" />
+          <Property Name="Fecha_crea" Type="DateTime" Precision="3" />
+          <Property Name="Fecha_mod" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Curso" Relationship="Self.ID_Profesor_fk" FromRole="Profesor" ToRole="Curso" />
+          <NavigationProperty Name="Usuario" Relationship="Self.ID_Usuario_crea_fk" FromRole="Profesor" ToRole="Usuario" />
+          <NavigationProperty Name="Usuario1" Relationship="Self.ID_Usuario_fk" FromRole="Profesor" ToRole="Usuario" />
+          <NavigationProperty Name="Usuario2" Relationship="Self.ID_Usuario_mod_fk" FromRole="Profesor" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="Proyecto">
+          <Key>
+            <PropertyRef Name="ID_Proyecto" />
+          </Key>
+          <Property Name="ID_Proyecto" Type="Int32" Nullable="false" />
+          <Property Name="Titulo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Abstract" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Keywords" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_pub" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Tipo" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_ini" Type="DateTime" Precision="3" />
+          <Property Name="Fecha_fin" Type="DateTime" Precision="3" />
+          <Property Name="Link_file" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Estado" Type="Int32" />
+          <Property Name="ID_Usuario_crea" Type="Int32" />
+          <NavigationProperty Name="Archivo_Investigacion" Relationship="Self.ID_Proyecto_fk" FromRole="Proyecto" ToRole="Archivo_Investigacion" />
+          <NavigationProperty Name="Det_Partic_Proyecto" Relationship="Self.ID_Proyecto_fk1" FromRole="Proyecto" ToRole="Det_Partic_Proyecto" />
+          <NavigationProperty Name="Proyecto_Constr" Relationship="Self.ID_Proyecto_fk2" FromRole="Proyecto" ToRole="Proyecto_Constr" />
+          <NavigationProperty Name="Usuario" Relationship="Self.ID_Usuario_crea_fk2" FromRole="Proyecto" ToRole="Usuario" />
+          <NavigationProperty Name="Archivo_Investigacion1" Relationship="Self.ArchivoI_Proyecto" FromRole="Proyecto" ToRole="Archivo_Investigacion" />
+        </EntityType>
+        <EntityType Name="Proyecto_Constr">
+          <Key>
+            <PropertyRef Name="ID_Proyecto" />
+            <PropertyRef Name="ID_Pers_Contr" />
+          </Key>
+          <Property Name="ID_Proyecto" Type="Int32" Nullable="false" />
+          <Property Name="ID_Pers_Contr" Type="Int32" Nullable="false" />
+          <Property Name="ID_Pers_Sup" Type="Int32" />
+          <Property Name="Comentario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Link_file" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_Carga" Type="DateTime" Precision="3" />
+          <Property Name="Estado" Type="Int32" />
+          <Property Name="Foto" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Referencia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Proyecto" Relationship="Self.ID_Proyecto_fk2" FromRole="Proyecto_Constr" ToRole="Proyecto" />
+          <NavigationProperty Name="Usuario" Relationship="Self.ID_Pers_Contr_fk" FromRole="Proyecto_Constr" ToRole="Usuario" />
+          <NavigationProperty Name="Usuario1" Relationship="Self.ID_Pers_Sup_fk" FromRole="Proyecto_Constr" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="ID_Usuario" />
+          </Key>
+          <Property Name="ID_Usuario" Type="Int32" Nullable="false" />
+          <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="contraseña" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Estado" Type="Int32" />
+          <Property Name="Rol" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_crea" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Alumno" Relationship="Self.ID_Usuario_crea_fk1" FromRole="Usuario" ToRole="Alumno" />
+          <NavigationProperty Name="Alumno1" Relationship="Self.ID_Usuario_fk1" FromRole="Usuario" ToRole="Alumno" />
+          <NavigationProperty Name="Alumno2" Relationship="Self.ID_Usuario_mod_fk1" FromRole="Usuario" ToRole="Alumno" />
+          <NavigationProperty Name="Archivo_Investigacion" Relationship="Self.ID_Usuario_crea_fk3" FromRole="Usuario" ToRole="Archivo_Investigacion" />
+          <NavigationProperty Name="Archivo_Investigacion1" Relationship="Self.ID_Usuario_mod_fk2" FromRole="Usuario" ToRole="Archivo_Investigacion" />
+          <NavigationProperty Name="Clic" Relationship="Self.ID_Usuario_fk7" FromRole="Usuario" ToRole="Clic" />
+          <NavigationProperty Name="Comentario" Relationship="Self.ID_Usuario_fk8" FromRole="Usuario" ToRole="Comentario" />
+          <NavigationProperty Name="Descarga_ArchivoI" Relationship="Self.ID_Usuario_fk6" FromRole="Usuario" ToRole="Descarga_ArchivoI" />
+          <NavigationProperty Name="Det_Archivo_Inv" Relationship="Self.ID_Usuario_fk5" FromRole="Usuario" ToRole="Det_Archivo_Inv" />
+          <NavigationProperty Name="Det_Partic_Proyecto" Relationship="Self.ID_Usuario_fk4" FromRole="Usuario" ToRole="Det_Partic_Proyecto" />
+          <NavigationProperty Name="Empresa" Relationship="Self.ID_Usuario_fk3" FromRole="Usuario" ToRole="Empresa" />
+          <NavigationProperty Name="Evento" Relationship="Self.ID_Usuario_crea_fk4" FromRole="Usuario" ToRole="Evento" />
+          <NavigationProperty Name="Evento1" Relationship="Self.ID_Usuario_mod_fk3" FromRole="Usuario" ToRole="Evento" />
+          <NavigationProperty Name="Invitado" Relationship="Self.ID_Usuario_fk2" FromRole="Usuario" ToRole="Invitado" />
+          <NavigationProperty Name="Noticia" Relationship="Self.ID_Usuario_crea_fk5" FromRole="Usuario" ToRole="Noticia" />
+          <NavigationProperty Name="Noticia1" Relationship="Self.ID_Usuario_mod_fk4" FromRole="Usuario" ToRole="Noticia" />
+          <NavigationProperty Name="Participantes" Relationship="Self.ID_Usuario_fk9" FromRole="Usuario" ToRole="Participantes" />
+          <NavigationProperty Name="Profesor" Relationship="Self.ID_Usuario_crea_fk" FromRole="Usuario" ToRole="Profesor" />
+          <NavigationProperty Name="Profesor1" Relationship="Self.ID_Usuario_fk" FromRole="Usuario" ToRole="Profesor" />
+          <NavigationProperty Name="Profesor2" Relationship="Self.ID_Usuario_mod_fk" FromRole="Usuario" ToRole="Profesor" />
+          <NavigationProperty Name="Proyecto" Relationship="Self.ID_Usuario_crea_fk2" FromRole="Usuario" ToRole="Proyecto" />
+          <NavigationProperty Name="Proyecto_Constr" Relationship="Self.ID_Pers_Contr_fk" FromRole="Usuario" ToRole="Proyecto_Constr" />
+          <NavigationProperty Name="Proyecto_Constr1" Relationship="Self.ID_Pers_Sup_fk" FromRole="Usuario" ToRole="Proyecto_Constr" />
+        </EntityType>
+        <Association Name="ID_Alumno_fk">
+          <End Role="Alumno" Type="Self.Alumno" Multiplicity="0..1" />
+          <End Role="Hoja_Vida" Type="Self.Hoja_Vida" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Alumno">
+              <PropertyRef Name="ID_Alumno" />
+            </Principal>
+            <Dependent Role="Hoja_Vida">
+              <PropertyRef Name="ID_Alumno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_crea_fk1">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Alumno" Type="Self.Alumno" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Alumno">
+              <PropertyRef Name="ID_Usuario_crea" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_fk1">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Alumno" Type="Self.Alumno" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Alumno">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_mod_fk1">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Alumno" Type="Self.Alumno" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Alumno">
+              <PropertyRef Name="ID_Usuario_mod" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_ArchivoI_fk">
+          <End Role="Archivo_Investigacion" Type="Self.Archivo_Investigacion" Multiplicity="1" />
+          <End Role="Det_Archivo_Inv" Type="Self.Det_Archivo_Inv" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Archivo_Investigacion">
+              <PropertyRef Name="ID_ArchivoI" />
+            </Principal>
+            <Dependent Role="Det_Archivo_Inv">
+              <PropertyRef Name="ID_ArchivoI" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_ArchivoI_fk1">
+          <End Role="Archivo_Investigacion" Type="Self.Archivo_Investigacion" Multiplicity="1" />
+          <End Role="Descarga_ArchivoI" Type="Self.Descarga_ArchivoI" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Archivo_Investigacion">
+              <PropertyRef Name="ID_ArchivoI" />
+            </Principal>
+            <Dependent Role="Descarga_ArchivoI">
+              <PropertyRef Name="ID_ArchivoI" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Proyecto_fk">
+          <End Role="Proyecto" Type="Self.Proyecto" Multiplicity="0..1" />
+          <End Role="Archivo_Investigacion" Type="Self.Archivo_Investigacion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proyecto">
+              <PropertyRef Name="ID_Proyecto" />
+            </Principal>
+            <Dependent Role="Archivo_Investigacion">
+              <PropertyRef Name="ID_Proyecto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_crea_fk3">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Archivo_Investigacion" Type="Self.Archivo_Investigacion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Archivo_Investigacion">
+              <PropertyRef Name="ID_Usuario_crea" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_mod_fk2">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Archivo_Investigacion" Type="Self.Archivo_Investigacion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Archivo_Investigacion">
+              <PropertyRef Name="ID_Usuario_mod" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Categoria_fk">
+          <End Role="Categoria" Type="Self.Categoria" Multiplicity="0..1" />
+          <End Role="Noticia" Type="Self.Noticia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categoria">
+              <PropertyRef Name="ID_Categoria" />
+            </Principal>
+            <Dependent Role="Noticia">
+              <PropertyRef Name="ID_Categoria" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_fk7">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Clic" Type="Self.Clic" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Clic">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Noticia_fk">
+          <End Role="Noticia" Type="Self.Noticia" Multiplicity="0..1" />
+          <End Role="Comentario" Type="Self.Comentario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Noticia">
+              <PropertyRef Name="ID_Noticia" />
+            </Principal>
+            <Dependent Role="Comentario">
+              <PropertyRef Name="ID_Noticia" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_fk8">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Comentario" Type="Self.Comentario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Comentario">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Profesor_fk">
+          <End Role="Profesor" Type="Self.Profesor" Multiplicity="0..1" />
+          <End Role="Curso" Type="Self.Curso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Profesor">
+              <PropertyRef Name="ID_Profesor" />
+            </Principal>
+            <Dependent Role="Curso">
+              <PropertyRef Name="ID_Profesor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_fk6">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+          <End Role="Descarga_ArchivoI" Type="Self.Descarga_ArchivoI" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Descarga_ArchivoI">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_fk5">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+          <End Role="Det_Archivo_Inv" Type="Self.Det_Archivo_Inv" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Det_Archivo_Inv">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_HojaVida_fk">
+          <End Role="Hoja_Vida" Type="Self.Hoja_Vida" Multiplicity="1" />
+          <End Role="Det_Certificado" Type="Self.Det_Certificado" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Hoja_Vida">
+              <PropertyRef Name="ID_HojaVida" />
+            </Principal>
+            <Dependent Role="Det_Certificado">
+              <PropertyRef Name="ID_HojaVida" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Det_Conoc_adic_fk5">
+          <End Role="Hoja_Vida" Type="Self.Hoja_Vida" Multiplicity="1" />
+          <End Role="Det_Conoc_adic" Type="Self.Det_Conoc_adic" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Hoja_Vida">
+              <PropertyRef Name="ID_HojaVida" />
+            </Principal>
+            <Dependent Role="Det_Conoc_adic">
+              <PropertyRef Name="ID_HojaVida" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_HojaVida_fk1">
+          <End Role="Hoja_Vida" Type="Self.Hoja_Vida" Multiplicity="1" />
+          <End Role="Det_Exp_Laboral" Type="Self.Det_Exp_Laboral" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Hoja_Vida">
+              <PropertyRef Name="ID_HojaVida" />
+            </Principal>
+            <Dependent Role="Det_Exp_Laboral">
+              <PropertyRef Name="ID_HojaVida" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_HojaVida_fk2">
+          <End Role="Hoja_Vida" Type="Self.Hoja_Vida" Multiplicity="1" />
+          <End Role="Det_Form_Acad" Type="Self.Det_Form_Acad" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Hoja_Vida">
+              <PropertyRef Name="ID_HojaVida" />
+            </Principal>
+            <Dependent Role="Det_Form_Acad">
+              <PropertyRef Name="ID_HojaVida" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Det_Idiomas_fk4">
+          <End Role="Hoja_Vida" Type="Self.Hoja_Vida" Multiplicity="1" />
+          <End Role="Det_Idiomas" Type="Self.Det_Idiomas" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Hoja_Vida">
+              <PropertyRef Name="ID_HojaVida" />
+            </Principal>
+            <Dependent Role="Det_Idiomas">
+              <PropertyRef Name="ID_HojaVida" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Det_Logro_fk">
+          <End Role="Hoja_Vida" Type="Self.Hoja_Vida" Multiplicity="1" />
+          <End Role="Det_Logro" Type="Self.Det_Logro" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Hoja_Vida">
+              <PropertyRef Name="ID_HojaVida" />
+            </Principal>
+            <Dependent Role="Det_Logro">
+              <PropertyRef Name="ID_HojaVida" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Proyecto_fk1">
+          <End Role="Proyecto" Type="Self.Proyecto" Multiplicity="1" />
+          <End Role="Det_Partic_Proyecto" Type="Self.Det_Partic_Proyecto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proyecto">
+              <PropertyRef Name="ID_Proyecto" />
+            </Principal>
+            <Dependent Role="Det_Partic_Proyecto">
+              <PropertyRef Name="ID_Proyecto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_fk4">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+          <End Role="Det_Partic_Proyecto" Type="Self.Det_Partic_Proyecto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Det_Partic_Proyecto">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Empresa_fk">
+          <End Role="Empresa" Type="Self.Empresa" Multiplicity="1" />
+          <End Role="Historial_Hoja_Vida" Type="Self.Historial_Hoja_Vida" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empresa">
+              <PropertyRef Name="ID_Empresa" />
+            </Principal>
+            <Dependent Role="Historial_Hoja_Vida">
+              <PropertyRef Name="ID_Empresa" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_fk3">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Empresa" Type="Self.Empresa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Empresa">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Evento_fk">
+          <End Role="Evento" Type="Self.Evento" Multiplicity="1" />
+          <End Role="Participantes" Type="Self.Participantes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Evento">
+              <PropertyRef Name="ID_Evento" />
+            </Principal>
+            <Dependent Role="Participantes">
+              <PropertyRef Name="ID_Evento" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_crea_fk4">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Evento" Type="Self.Evento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Evento">
+              <PropertyRef Name="ID_Usuario_crea" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_mod_fk3">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Evento" Type="Self.Evento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Evento">
+              <PropertyRef Name="ID_Usuario_mod" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_HojaVida_fk3">
+          <End Role="Hoja_Vida" Type="Self.Hoja_Vida" Multiplicity="1" />
+          <End Role="Historial_Hoja_Vida" Type="Self.Historial_Hoja_Vida" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Hoja_Vida">
+              <PropertyRef Name="ID_HojaVida" />
+            </Principal>
+            <Dependent Role="Historial_Hoja_Vida">
+              <PropertyRef Name="ID_HojaVida" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_fk2">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Invitado" Type="Self.Invitado" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Invitado">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_crea_fk5">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Noticia" Type="Self.Noticia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Noticia">
+              <PropertyRef Name="ID_Usuario_crea" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_mod_fk4">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Noticia" Type="Self.Noticia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Noticia">
+              <PropertyRef Name="ID_Usuario_mod" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_fk9">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+          <End Role="Participantes" Type="Self.Participantes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Participantes">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_crea_fk">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Profesor" Type="Self.Profesor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Profesor">
+              <PropertyRef Name="ID_Usuario_crea" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_fk">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Profesor" Type="Self.Profesor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Profesor">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_mod_fk">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Profesor" Type="Self.Profesor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Profesor">
+              <PropertyRef Name="ID_Usuario_mod" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Proyecto_fk2">
+          <End Role="Proyecto" Type="Self.Proyecto" Multiplicity="1" />
+          <End Role="Proyecto_Constr" Type="Self.Proyecto_Constr" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proyecto">
+              <PropertyRef Name="ID_Proyecto" />
+            </Principal>
+            <Dependent Role="Proyecto_Constr">
+              <PropertyRef Name="ID_Proyecto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Usuario_crea_fk2">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Proyecto" Type="Self.Proyecto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Proyecto">
+              <PropertyRef Name="ID_Usuario_crea" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Pers_Contr_fk">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+          <End Role="Proyecto_Constr" Type="Self.Proyecto_Constr" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Proyecto_Constr">
+              <PropertyRef Name="ID_Pers_Contr" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ID_Pers_Sup_fk">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Proyecto_Constr" Type="Self.Proyecto_Constr" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Proyecto_Constr">
+              <PropertyRef Name="ID_Pers_Sup" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ArchivoI_Proyecto">
+          <End Role="Archivo_Investigacion" Type="Self.Archivo_Investigacion" Multiplicity="*" />
+          <End Role="Proyecto" Type="Self.Proyecto" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="WebEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Alumno" EntityType="Self.Alumno" />
+          <EntitySet Name="Archivo_Investigacion" EntityType="Self.Archivo_Investigacion" />
+          <EntitySet Name="Categoria" EntityType="Self.Categoria" />
+          <EntitySet Name="Clic" EntityType="Self.Clic" />
+          <EntitySet Name="Comentario" EntityType="Self.Comentario" />
+          <EntitySet Name="Conoc_adic" EntityType="Self.Conoc_adic" />
+          <EntitySet Name="Curso" EntityType="Self.Curso" />
+          <EntitySet Name="Descarga_ArchivoI" EntityType="Self.Descarga_ArchivoI" />
+          <EntitySet Name="Det_Archivo_Inv" EntityType="Self.Det_Archivo_Inv" />
+          <EntitySet Name="Det_Certificado" EntityType="Self.Det_Certificado" />
+          <EntitySet Name="Det_Conoc_adic" EntityType="Self.Det_Conoc_adic" />
+          <EntitySet Name="Det_Exp_Laboral" EntityType="Self.Det_Exp_Laboral" />
+          <EntitySet Name="Det_Form_Acad" EntityType="Self.Det_Form_Acad" />
+          <EntitySet Name="Det_Idiomas" EntityType="Self.Det_Idiomas" />
+          <EntitySet Name="Det_Logro" EntityType="Self.Det_Logro" />
+          <EntitySet Name="Det_Partic_Proyecto" EntityType="Self.Det_Partic_Proyecto" />
+          <EntitySet Name="Empresa" EntityType="Self.Empresa" />
+          <EntitySet Name="Evento" EntityType="Self.Evento" />
+          <EntitySet Name="Historial_Hoja_Vida" EntityType="Self.Historial_Hoja_Vida" />
+          <EntitySet Name="Hoja_Vida" EntityType="Self.Hoja_Vida" />
+          <EntitySet Name="Invitado" EntityType="Self.Invitado" />
+          <EntitySet Name="Noticia" EntityType="Self.Noticia" />
+          <EntitySet Name="Participantes" EntityType="Self.Participantes" />
+          <EntitySet Name="Profesor" EntityType="Self.Profesor" />
+          <EntitySet Name="Proyecto" EntityType="Self.Proyecto" />
+          <EntitySet Name="Proyecto_Constr" EntityType="Self.Proyecto_Constr" />
+          <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+          <AssociationSet Name="ID_Alumno_fk" Association="Self.ID_Alumno_fk">
+            <End Role="Alumno" EntitySet="Alumno" />
+            <End Role="Hoja_Vida" EntitySet="Hoja_Vida" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_crea_fk1" Association="Self.ID_Usuario_crea_fk1">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Alumno" EntitySet="Alumno" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_fk1" Association="Self.ID_Usuario_fk1">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Alumno" EntitySet="Alumno" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_mod_fk1" Association="Self.ID_Usuario_mod_fk1">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Alumno" EntitySet="Alumno" />
+          </AssociationSet>
+          <AssociationSet Name="ID_ArchivoI_fk" Association="Self.ID_ArchivoI_fk">
+            <End Role="Archivo_Investigacion" EntitySet="Archivo_Investigacion" />
+            <End Role="Det_Archivo_Inv" EntitySet="Det_Archivo_Inv" />
+          </AssociationSet>
+          <AssociationSet Name="ID_ArchivoI_fk1" Association="Self.ID_ArchivoI_fk1">
+            <End Role="Archivo_Investigacion" EntitySet="Archivo_Investigacion" />
+            <End Role="Descarga_ArchivoI" EntitySet="Descarga_ArchivoI" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Proyecto_fk" Association="Self.ID_Proyecto_fk">
+            <End Role="Proyecto" EntitySet="Proyecto" />
+            <End Role="Archivo_Investigacion" EntitySet="Archivo_Investigacion" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_crea_fk3" Association="Self.ID_Usuario_crea_fk3">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Archivo_Investigacion" EntitySet="Archivo_Investigacion" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_mod_fk2" Association="Self.ID_Usuario_mod_fk2">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Archivo_Investigacion" EntitySet="Archivo_Investigacion" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Categoria_fk" Association="Self.ID_Categoria_fk">
+            <End Role="Categoria" EntitySet="Categoria" />
+            <End Role="Noticia" EntitySet="Noticia" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_fk7" Association="Self.ID_Usuario_fk7">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Clic" EntitySet="Clic" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Noticia_fk" Association="Self.ID_Noticia_fk">
+            <End Role="Noticia" EntitySet="Noticia" />
+            <End Role="Comentario" EntitySet="Comentario" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_fk8" Association="Self.ID_Usuario_fk8">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Comentario" EntitySet="Comentario" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Profesor_fk" Association="Self.ID_Profesor_fk">
+            <End Role="Profesor" EntitySet="Profesor" />
+            <End Role="Curso" EntitySet="Curso" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_fk6" Association="Self.ID_Usuario_fk6">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Descarga_ArchivoI" EntitySet="Descarga_ArchivoI" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_fk5" Association="Self.ID_Usuario_fk5">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Det_Archivo_Inv" EntitySet="Det_Archivo_Inv" />
+          </AssociationSet>
+          <AssociationSet Name="ID_HojaVida_fk" Association="Self.ID_HojaVida_fk">
+            <End Role="Hoja_Vida" EntitySet="Hoja_Vida" />
+            <End Role="Det_Certificado" EntitySet="Det_Certificado" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Det_Conoc_adic_fk5" Association="Self.ID_Det_Conoc_adic_fk5">
+            <End Role="Hoja_Vida" EntitySet="Hoja_Vida" />
+            <End Role="Det_Conoc_adic" EntitySet="Det_Conoc_adic" />
+          </AssociationSet>
+          <AssociationSet Name="ID_HojaVida_fk1" Association="Self.ID_HojaVida_fk1">
+            <End Role="Hoja_Vida" EntitySet="Hoja_Vida" />
+            <End Role="Det_Exp_Laboral" EntitySet="Det_Exp_Laboral" />
+          </AssociationSet>
+          <AssociationSet Name="ID_HojaVida_fk2" Association="Self.ID_HojaVida_fk2">
+            <End Role="Hoja_Vida" EntitySet="Hoja_Vida" />
+            <End Role="Det_Form_Acad" EntitySet="Det_Form_Acad" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Det_Idiomas_fk4" Association="Self.ID_Det_Idiomas_fk4">
+            <End Role="Hoja_Vida" EntitySet="Hoja_Vida" />
+            <End Role="Det_Idiomas" EntitySet="Det_Idiomas" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Det_Logro_fk" Association="Self.ID_Det_Logro_fk">
+            <End Role="Hoja_Vida" EntitySet="Hoja_Vida" />
+            <End Role="Det_Logro" EntitySet="Det_Logro" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Proyecto_fk1" Association="Self.ID_Proyecto_fk1">
+            <End Role="Proyecto" EntitySet="Proyecto" />
+            <End Role="Det_Partic_Proyecto" EntitySet="Det_Partic_Proyecto" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_fk4" Association="Self.ID_Usuario_fk4">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Det_Partic_Proyecto" EntitySet="Det_Partic_Proyecto" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Empresa_fk" Association="Self.ID_Empresa_fk">
+            <End Role="Empresa" EntitySet="Empresa" />
+            <End Role="Historial_Hoja_Vida" EntitySet="Historial_Hoja_Vida" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_fk3" Association="Self.ID_Usuario_fk3">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Empresa" EntitySet="Empresa" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Evento_fk" Association="Self.ID_Evento_fk">
+            <End Role="Evento" EntitySet="Evento" />
+            <End Role="Participantes" EntitySet="Participantes" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_crea_fk4" Association="Self.ID_Usuario_crea_fk4">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Evento" EntitySet="Evento" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_mod_fk3" Association="Self.ID_Usuario_mod_fk3">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Evento" EntitySet="Evento" />
+          </AssociationSet>
+          <AssociationSet Name="ID_HojaVida_fk3" Association="Self.ID_HojaVida_fk3">
+            <End Role="Hoja_Vida" EntitySet="Hoja_Vida" />
+            <End Role="Historial_Hoja_Vida" EntitySet="Historial_Hoja_Vida" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_fk2" Association="Self.ID_Usuario_fk2">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Invitado" EntitySet="Invitado" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_crea_fk5" Association="Self.ID_Usuario_crea_fk5">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Noticia" EntitySet="Noticia" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_mod_fk4" Association="Self.ID_Usuario_mod_fk4">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Noticia" EntitySet="Noticia" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_fk9" Association="Self.ID_Usuario_fk9">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Participantes" EntitySet="Participantes" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_crea_fk" Association="Self.ID_Usuario_crea_fk">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Profesor" EntitySet="Profesor" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_fk" Association="Self.ID_Usuario_fk">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Profesor" EntitySet="Profesor" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_mod_fk" Association="Self.ID_Usuario_mod_fk">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Profesor" EntitySet="Profesor" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Proyecto_fk2" Association="Self.ID_Proyecto_fk2">
+            <End Role="Proyecto" EntitySet="Proyecto" />
+            <End Role="Proyecto_Constr" EntitySet="Proyecto_Constr" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Usuario_crea_fk2" Association="Self.ID_Usuario_crea_fk2">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Proyecto" EntitySet="Proyecto" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Pers_Contr_fk" Association="Self.ID_Pers_Contr_fk">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Proyecto_Constr" EntitySet="Proyecto_Constr" />
+          </AssociationSet>
+          <AssociationSet Name="ID_Pers_Sup_fk" Association="Self.ID_Pers_Sup_fk">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Proyecto_Constr" EntitySet="Proyecto_Constr" />
+          </AssociationSet>
+          <AssociationSet Name="ArchivoI_Proyecto" Association="Self.ArchivoI_Proyecto">
+            <End Role="Archivo_Investigacion" EntitySet="Archivo_Investigacion" />
+            <End Role="Proyecto" EntitySet="Proyecto" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="WebModel1StoreContainer" CdmEntityContainer="WebEntities">
+          <EntitySetMapping Name="Alumno">
+            <EntityTypeMapping TypeName="WebModel1.Alumno">
+              <MappingFragment StoreEntitySet="Alumno">
+                <ScalarProperty Name="ID_Alumno" ColumnName="ID_Alumno" />
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+                <ScalarProperty Name="ID_Usuario_crea" ColumnName="ID_Usuario_crea" />
+                <ScalarProperty Name="ID_Usuario_mod" ColumnName="ID_Usuario_mod" />
+                <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+                <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+                <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+                <ScalarProperty Name="Celular" ColumnName="Celular" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="Ciclo" ColumnName="Ciclo" />
+                <ScalarProperty Name="DNI" ColumnName="DNI" />
+                <ScalarProperty Name="Fecha_Nacimiento" ColumnName="Fecha_Nacimiento" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="Testimonio" ColumnName="Testimonio" />
+                <ScalarProperty Name="Puesto_empresa" ColumnName="Puesto_empresa" />
+                <ScalarProperty Name="Promocion" ColumnName="Promocion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Archivo_Investigacion">
+            <EntityTypeMapping TypeName="WebModel1.Archivo_Investigacion">
+              <MappingFragment StoreEntitySet="Archivo_Investigacion">
+                <ScalarProperty Name="ID_ArchivoI" ColumnName="ID_ArchivoI" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Fecha_invest" ColumnName="Fecha_invest" />
+                <ScalarProperty Name="Fecha_pub_ini" ColumnName="Fecha_pub_ini" />
+                <ScalarProperty Name="Fecha_pub_fin" ColumnName="Fecha_pub_fin" />
+                <ScalarProperty Name="Foto" ColumnName="Foto" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Referencia" ColumnName="Referencia" />
+                <ScalarProperty Name="Fecha_crea" ColumnName="Fecha_crea" />
+                <ScalarProperty Name="ID_Usuario_crea" ColumnName="ID_Usuario_crea" />
+                <ScalarProperty Name="Fecha_mod" ColumnName="Fecha_mod" />
+                <ScalarProperty Name="ID_Usuario_mod" ColumnName="ID_Usuario_mod" />
+                <ScalarProperty Name="Link_file" ColumnName="Link_file" />
+                <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+                <ScalarProperty Name="ID_Proyecto" ColumnName="ID_Proyecto" />
+                <ScalarProperty Name="AI_Externo" ColumnName="AI_Externo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Categoria">
+            <EntityTypeMapping TypeName="WebModel1.Categoria">
+              <MappingFragment StoreEntitySet="Categoria">
+                <ScalarProperty Name="ID_Categoria" ColumnName="ID_Categoria" />
+                <ScalarProperty Name="Categoria1" ColumnName="Categoria" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Clic">
+            <EntityTypeMapping TypeName="WebModel1.Clic">
+              <MappingFragment StoreEntitySet="Clic">
+                <ScalarProperty Name="ID_Clic" ColumnName="ID_Clic" />
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+                <ScalarProperty Name="Cont_ArchivoI" ColumnName="Cont_ArchivoI" />
+                <ScalarProperty Name="Cont_Noticias" ColumnName="Cont_Noticias" />
+                <ScalarProperty Name="Cont_Eventos" ColumnName="Cont_Eventos" />
+                <ScalarProperty Name="Cont_AcercaDe" ColumnName="Cont_AcercaDe" />
+                <ScalarProperty Name="Cont_Proyectos" ColumnName="Cont_Proyectos" />
+                <ScalarProperty Name="FechaHora" ColumnName="FechaHora" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Comentario">
+            <EntityTypeMapping TypeName="WebModel1.Comentario">
+              <MappingFragment StoreEntitySet="Comentario">
+                <ScalarProperty Name="ID_Comentario" ColumnName="ID_Comentario" />
+                <ScalarProperty Name="ID_Noticia" ColumnName="ID_Noticia" />
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+                <ScalarProperty Name="Contenido" ColumnName="Contenido" />
+                <ScalarProperty Name="Fecha_pub" ColumnName="Fecha_pub" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Conoc_adic">
+            <EntityTypeMapping TypeName="WebModel1.Conoc_adic">
+              <MappingFragment StoreEntitySet="Conoc_adic">
+                <ScalarProperty Name="ID_Conoc_adic" ColumnName="ID_Conoc_adic" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Curso">
+            <EntityTypeMapping TypeName="WebModel1.Curso">
+              <MappingFragment StoreEntitySet="Curso">
+                <ScalarProperty Name="ID_Curso" ColumnName="ID_Curso" />
+                <ScalarProperty Name="ID_Profesor" ColumnName="ID_Profesor" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Horario" ColumnName="Horario" />
+                <ScalarProperty Name="Creditos" ColumnName="Creditos" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Descarga_ArchivoI">
+            <EntityTypeMapping TypeName="WebModel1.Descarga_ArchivoI">
+              <MappingFragment StoreEntitySet="Descarga_ArchivoI">
+                <ScalarProperty Name="ID_ArchivoI" ColumnName="ID_ArchivoI" />
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+                <ScalarProperty Name="Cont_descargas" ColumnName="Cont_descargas" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Det_Archivo_Inv">
+            <EntityTypeMapping TypeName="WebModel1.Det_Archivo_Inv">
+              <MappingFragment StoreEntitySet="Det_Archivo_Inv">
+                <ScalarProperty Name="ID_ArchivoI" ColumnName="ID_ArchivoI" />
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+                <ScalarProperty Name="Rol" ColumnName="Rol" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Det_Certificado">
+            <EntityTypeMapping TypeName="WebModel1.Det_Certificado">
+              <MappingFragment StoreEntitySet="Det_Certificado">
+                <ScalarProperty Name="ID_HojaVida" ColumnName="ID_HojaVida" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Institucion" ColumnName="Institucion" />
+                <ScalarProperty Name="Fecha_Ini" ColumnName="Fecha_Ini" />
+                <ScalarProperty Name="Fecha_Fin" ColumnName="Fecha_Fin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Det_Conoc_adic">
+            <EntityTypeMapping TypeName="WebModel1.Det_Conoc_adic">
+              <MappingFragment StoreEntitySet="Det_Conoc_adic">
+                <ScalarProperty Name="ID_HojaVida" ColumnName="ID_HojaVida" />
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="Herramienta" ColumnName="Herramienta" />
+                <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Det_Exp_Laboral">
+            <EntityTypeMapping TypeName="WebModel1.Det_Exp_Laboral">
+              <MappingFragment StoreEntitySet="Det_Exp_Laboral">
+                <ScalarProperty Name="ID_HojaVida" ColumnName="ID_HojaVida" />
+                <ScalarProperty Name="Empresa" ColumnName="Empresa" />
+                <ScalarProperty Name="Fecha_Ini" ColumnName="Fecha_Ini" />
+                <ScalarProperty Name="Fecha_Fin" ColumnName="Fecha_Fin" />
+                <ScalarProperty Name="Rol" ColumnName="Rol" />
+                <ScalarProperty Name="Comentario" ColumnName="Comentario" />
+                <ScalarProperty Name="Referencia" ColumnName="Referencia" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Det_Form_Acad">
+            <EntityTypeMapping TypeName="WebModel1.Det_Form_Acad">
+              <MappingFragment StoreEntitySet="Det_Form_Acad">
+                <ScalarProperty Name="ID_HojaVida" ColumnName="ID_HojaVida" />
+                <ScalarProperty Name="Grado_acad" ColumnName="Grado_acad" />
+                <ScalarProperty Name="Carrera" ColumnName="Carrera" />
+                <ScalarProperty Name="Institucion" ColumnName="Institucion" />
+                <ScalarProperty Name="Fecha_Ini" ColumnName="Fecha_Ini" />
+                <ScalarProperty Name="Fecha_Fin" ColumnName="Fecha_Fin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Det_Idiomas">
+            <EntityTypeMapping TypeName="WebModel1.Det_Idiomas">
+              <MappingFragment StoreEntitySet="Det_Idiomas">
+                <ScalarProperty Name="ID_HojaVida" ColumnName="ID_HojaVida" />
+                <ScalarProperty Name="Institución" ColumnName="Institución" />
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="NOral" ColumnName="NOral" />
+                <ScalarProperty Name="NEscrito" ColumnName="NEscrito" />
+                <ScalarProperty Name="NLectura" ColumnName="NLectura" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Det_Logro">
+            <EntityTypeMapping TypeName="WebModel1.Det_Logro">
+              <MappingFragment StoreEntitySet="Det_Logro">
+                <ScalarProperty Name="ID_HojaVida" ColumnName="ID_HojaVida" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Det_Partic_Proyecto">
+            <EntityTypeMapping TypeName="WebModel1.Det_Partic_Proyecto">
+              <MappingFragment StoreEntitySet="Det_Partic_Proyecto">
+                <ScalarProperty Name="ID_Proyecto" ColumnName="ID_Proyecto" />
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+                <ScalarProperty Name="Rol" ColumnName="Rol" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Empresa">
+            <EntityTypeMapping TypeName="WebModel1.Empresa">
+              <MappingFragment StoreEntitySet="Empresa">
+                <ScalarProperty Name="ID_Empresa" ColumnName="ID_Empresa" />
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+                <ScalarProperty Name="RUC" ColumnName="RUC" />
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="Razon_social" ColumnName="Razon_social" />
+                <ScalarProperty Name="Empresa1" ColumnName="Empresa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Evento">
+            <EntityTypeMapping TypeName="WebModel1.Evento">
+              <MappingFragment StoreEntitySet="Evento">
+                <ScalarProperty Name="ID_Evento" ColumnName="ID_Evento" />
+                <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Foto" ColumnName="Foto" />
+                <ScalarProperty Name="Lugar" ColumnName="Lugar" />
+                <ScalarProperty Name="Costo" ColumnName="Costo" />
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+                <ScalarProperty Name="Hora" ColumnName="Hora" />
+                <ScalarProperty Name="Fecha_pub" ColumnName="Fecha_pub" />
+                <ScalarProperty Name="Fecha_ini" ColumnName="Fecha_ini" />
+                <ScalarProperty Name="Fecha_fin" ColumnName="Fecha_fin" />
+                <ScalarProperty Name="ID_Usuario_crea" ColumnName="ID_Usuario_crea" />
+                <ScalarProperty Name="ID_Usuario_mod" ColumnName="ID_Usuario_mod" />
+                <ScalarProperty Name="Fecha_mod" ColumnName="Fecha_mod" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Historial_Hoja_Vida">
+            <EntityTypeMapping TypeName="WebModel1.Historial_Hoja_Vida">
+              <MappingFragment StoreEntitySet="Historial_Hoja_Vida">
+                <ScalarProperty Name="ID_HojaVida" ColumnName="ID_HojaVida" />
+                <ScalarProperty Name="ID_Empresa" ColumnName="ID_Empresa" />
+                <ScalarProperty Name="Cantidad_visita" ColumnName="Cantidad_visita" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Hoja_Vida">
+            <EntityTypeMapping TypeName="WebModel1.Hoja_Vida">
+              <MappingFragment StoreEntitySet="Hoja_Vida">
+                <ScalarProperty Name="ID_HojaVida" ColumnName="ID_HojaVida" />
+                <ScalarProperty Name="ID_Alumno" ColumnName="ID_Alumno" />
+                <ScalarProperty Name="Foto" ColumnName="Foto" />
+                <ScalarProperty Name="Desc_perfil" ColumnName="Desc_perfil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Invitado">
+            <EntityTypeMapping TypeName="WebModel1.Invitado">
+              <MappingFragment StoreEntitySet="Invitado">
+                <ScalarProperty Name="ID_Invitado" ColumnName="ID_Invitado" />
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+                <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+                <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+                <ScalarProperty Name="Celular" ColumnName="Celular" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Noticia">
+            <EntityTypeMapping TypeName="WebModel1.Noticia">
+              <MappingFragment StoreEntitySet="Noticia">
+                <ScalarProperty Name="ID_Noticia" ColumnName="ID_Noticia" />
+                <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Contenido" ColumnName="Contenido" />
+                <ScalarProperty Name="Foto" ColumnName="Foto" />
+                <ScalarProperty Name="ID_Categoria" ColumnName="ID_Categoria" />
+                <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+                <ScalarProperty Name="Fecha_pub" ColumnName="Fecha_pub" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="ID_Usuario_crea" ColumnName="ID_Usuario_crea" />
+                <ScalarProperty Name="Fecha_crea" ColumnName="Fecha_crea" />
+                <ScalarProperty Name="ID_Usuario_mod" ColumnName="ID_Usuario_mod" />
+                <ScalarProperty Name="Fecha_mod" ColumnName="Fecha_mod" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Participantes">
+            <EntityTypeMapping TypeName="WebModel1.Participantes">
+              <MappingFragment StoreEntitySet="Participantes">
+                <ScalarProperty Name="ID_Evento" ColumnName="ID_Evento" />
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+                <ScalarProperty Name="FechaHoraReg" ColumnName="FechaHoraReg" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Profesor">
+            <EntityTypeMapping TypeName="WebModel1.Profesor">
+              <MappingFragment StoreEntitySet="Profesor">
+                <ScalarProperty Name="ID_Profesor" ColumnName="ID_Profesor" />
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+                <ScalarProperty Name="ID_Usuario_crea" ColumnName="ID_Usuario_crea" />
+                <ScalarProperty Name="ID_Usuario_mod" ColumnName="ID_Usuario_mod" />
+                <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+                <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+                <ScalarProperty Name="Celular" ColumnName="Celular" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="Profesion" ColumnName="Profesion" />
+                <ScalarProperty Name="Abstract" ColumnName="Abstract" />
+                <ScalarProperty Name="DNI" ColumnName="DNI" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Fecha_crea" ColumnName="Fecha_crea" />
+                <ScalarProperty Name="Fecha_mod" ColumnName="Fecha_mod" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Proyecto">
+            <EntityTypeMapping TypeName="WebModel1.Proyecto">
+              <MappingFragment StoreEntitySet="Proyecto">
+                <ScalarProperty Name="ID_Proyecto" ColumnName="ID_Proyecto" />
+                <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+                <ScalarProperty Name="Abstract" ColumnName="Abstract" />
+                <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+                <ScalarProperty Name="Fecha_pub" ColumnName="Fecha_pub" />
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="Fecha_ini" ColumnName="Fecha_ini" />
+                <ScalarProperty Name="Fecha_fin" ColumnName="Fecha_fin" />
+                <ScalarProperty Name="Link_file" ColumnName="Link_file" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="ID_Usuario_crea" ColumnName="ID_Usuario_crea" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Proyecto_Constr">
+            <EntityTypeMapping TypeName="WebModel1.Proyecto_Constr">
+              <MappingFragment StoreEntitySet="Proyecto_Constr">
+                <ScalarProperty Name="ID_Proyecto" ColumnName="ID_Proyecto" />
+                <ScalarProperty Name="ID_Pers_Contr" ColumnName="ID_Pers_Contr" />
+                <ScalarProperty Name="ID_Pers_Sup" ColumnName="ID_Pers_Sup" />
+                <ScalarProperty Name="Comentario" ColumnName="Comentario" />
+                <ScalarProperty Name="Link_file" ColumnName="Link_file" />
+                <ScalarProperty Name="Fecha_Carga" ColumnName="Fecha_Carga" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Foto" ColumnName="Foto" />
+                <ScalarProperty Name="Referencia" ColumnName="Referencia" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuario">
+            <EntityTypeMapping TypeName="WebModel1.Usuario">
+              <MappingFragment StoreEntitySet="Usuario">
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="contraseña" ColumnName="contraseña" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Rol" ColumnName="Rol" />
+                <ScalarProperty Name="Fecha_crea" ColumnName="Fecha_crea" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="ArchivoI_Proyecto" TypeName="WebModel1.ArchivoI_Proyecto" StoreEntitySet="ArchivoI_Proyecto">
+            <EndProperty Name="Archivo_Investigacion">
+              <ScalarProperty Name="ID_ArchivoI" ColumnName="ID_ArchivoI" />
+            </EndProperty>
+            <EndProperty Name="Proyecto">
+              <ScalarProperty Name="ID_Proyecto" ColumnName="ID_Proyecto" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

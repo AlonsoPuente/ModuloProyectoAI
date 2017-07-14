@@ -1,0 +1,112 @@
+﻿@model IEnumerable<CoreDA.Proyecto>
+
+
+<style>
+    body {
+        background-image: url("paper.gif");
+        background-color: #F4E6F9;
+    }
+</style>
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="IndexArchivoInvestigacion"><b>ESAN</b></a></li>
+    <li class="breadcrumb-item active"><b>PROYECTOS</b></li>
+</ol>
+
+
+<div class="container">
+
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:400px; height:400px;margin:0 auto">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+
+
+
+            <div class="item active">
+                <img src="~/Fotos/esan2.jpg" alt=@Html.DisplayNameFor(model => model.Titulo) style="width:100%;">
+            </div>
+
+            <div class="item">
+                <img src="~/Fotos/esan2.jpg" alt=@Html.DisplayNameFor(model => model.Titulo) style="width:100%;">
+            </div>
+
+            <div class="item">
+                <img src="~/Fotos/esan2.jpg" alt=@Html.DisplayNameFor(model => model.Titulo) style="width:100%;">
+            </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+</div>
+
+<br />
+
+
+<div class="container" style="color:burlywood">
+    <div class="jumbotron">
+        <p align=justify style="font-size:16px; color:black; font-family:Arial;">Muchas de las grandes innovaciones que han cambiado el mundo han sido producto de un trabajo dedicado y comprometido. Por eso es necesaria la preparación de ingenieros innovadores y creativos. Para la Universidad Esan, la investigación es un paso fundamental para la solución de los problemas del futuro. Por ello sus actividades de investigación atienden temáticas diversas. Se enfocan en temas de energía, agua y medio ambiente, así como en proyectos de desarrollo en materiales, tecnologías de la información y sistemas mecánicos y mecatrónicos. Para esto se utilizan métodos de aprendizaje activo y se fomenta la participación en  proyectos transdisciplinarios en colaboración con importantes instituciones de investigación, nacionales e internacionales. Estos son los proyectos generados por nuestros profesores</p>
+    </div>
+</div>
+
+
+
+
+<br />
+
+
+
+<div class="row">
+    @foreach (var item in Model)
+            {
+        <div class="col-xs-6 col-md-3">           
+                <div class="card">
+                    <img src="~/Fotos/esan2.jpg" alt="John" style="width:100%">
+                    <div class="container">
+                        <h1 align="center" color="red"><b>@Html.DisplayFor(modelItem => item.Titulo, "Título del proyecto")</b></h1>
+                        <p align="center" class="title">@Html.DisplayFor(modelItem => item.Abstract, "Abstract")</p>
+                        <p align="center"><b>@Html.DisplayFor(modelItem => item.Keywords, "Palabras clave")</b></p>
+                        <p align="center" class="title">@Html.DisplayFor(modelItem => item.Tipo, "Tipo de proyecto")</p>
+                        <p align="center">@Html.DisplayFor(modelItem => item.Fecha_ini, "Fecha de inicio")</p>
+
+
+                        <div class="card-block">  
+                            
+                            <a href="~/Fotos/esan2.jpg" download="@Html.DisplayFor(modelItem => item.Titulo, "Título del proyecto")" style="font-size:16px">
+                                Descargar Proyecto
+                            </a>                                                  
+                                                         
+                                      
+                         
+                            
+
+
+                                            
+                        </div>
+                    </div>
+                </div>
+            </div>        
+    }
+        
+</div>
+
+
+

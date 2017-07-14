@@ -1,0 +1,126 @@
+﻿@model IEnumerable<CoreDA.Archivo_Investigacion>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fecha_invest)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fecha_pub_ini)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fecha_pub_fin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Foto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Referencia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fecha_crea)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ID_Usuario_crea)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fecha_mod)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ID_Usuario_mod)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Link_file)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Keywords)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ID_Proyecto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AI_Externo)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre, "Nombre")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descripcion, "Descripción")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fecha_invest, "Fecha de investigación")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fecha_pub_ini, "Fecha de publicación inicial")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fecha_pub_fin, "Fecha de publicación final")
+                </td>
+                <td>
+                    @if (item.Foto != null)
+                {
+                        <img src="~/FotosAI/@item.Foto" height="70" width="50" data-nombre="@item.Foto" />
+                    }
+                    else
+                    {
+                        <img src="~/FotosAI/NoImage.png" height="70" width="50" />
+                    }
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Estado, "Estado")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Referencia, "Referencia")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fecha_crea, "Fecha de creación")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID_Usuario_crea, "Usuario creador")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fecha_mod, "Fecha de modificación")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID_Usuario_mod, "Usuario modificador")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Link_file, "Archivo de investigación")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Keywords, "Palabras clave")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID_Proyecto, "Proyecto referenciado")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AI_Externo, "Archivo de investigación externo")
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "EditarArchivoI", "Main", new { area = "Administrador", ID = item.ID_ArchivoI }, null) |
+                    @Html.ActionLink("Eliminar", "EliminarArchivoI", "Main", new { area = "Administrador", ID = item.ID_ArchivoI }, null)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

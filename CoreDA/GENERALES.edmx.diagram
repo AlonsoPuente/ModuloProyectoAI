@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="787ce4287a4440f9920284214cae6721" Name="Diagram1">
+        <EntityTypeShape EntityType="WebModel2.Alumno" Width="1.5" PointX="3" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Archivo_Investigacion" Width="1.5" PointX="3" PointY="32.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Categoria" Width="1.5" PointX="5.75" PointY="40" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Clic" Width="1.5" PointX="3" PointY="41" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Comentario" Width="1.5" PointX="3" PointY="29.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Conoc_adic" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Curso" Width="1.5" PointX="5.25" PointY="66.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Descarga_ArchivoI" Width="1.5" PointX="5.25" PointY="34.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Det_Archivo_Inv" Width="1.5" PointX="5.25" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Det_Certificado" Width="1.5" PointX="7.5" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Det_Conoc_adic" Width="1.5" PointX="7.5" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Det_Exp_Laboral" Width="1.5" PointX="7.5" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Det_Form_Acad" Width="1.5" PointX="7.5" PointY="25.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Det_Idiomas" Width="1.5" PointX="7.5" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Det_Logro" Width="1.5" PointX="7.5" PointY="32.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Det_Partic_Proyecto" Width="1.5" PointX="12.5" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Empresa" Width="1.5" PointX="3" PointY="48" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Evento" Width="1.5" PointX="3" PointY="51.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Historial_Hoja_Vida" Width="1.5" PointX="7.5" PointY="36" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Hoja_Vida" Width="1.5" PointX="5.25" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Invitado" Width="1.5" PointX="3" PointY="57" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Noticia" Width="1.5" PointX="8" PointY="39.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Participantes" Width="1.5" PointX="5.25" PointY="43.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Profesor" Width="1.5" PointX="3" PointY="65.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Proyecto" Width="1.5" PointX="10.25" PointY="33.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Proyecto_Constr" Width="1.5" PointX="15.5" PointY="34" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebModel2.Usuario" Width="1.5" PointX="0.75" PointY="32.25" IsExpanded="true" />
+        <AssociationConnector Association="WebModel2.ID_Alumno_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Usuario_crea_fk1" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Usuario_fk1" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Usuario_mod_fk1" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_ArchivoI_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_ArchivoI_fk1" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Proyecto_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Usuario_crea_fk3" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Usuario_mod_fk2" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Categoria_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Usuario_fk7" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Noticia_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Usuario_fk8" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Profesor_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Usuario_fk6" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Usuario_fk5" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_HojaVida_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Det_Conoc_adic_fk5" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_HojaVida_fk1" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_HojaVida_fk2" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Det_Idiomas_fk4" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Det_Logro_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Proyecto_fk1" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Usuario_fk4" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Empresa_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Usuario_fk3" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Evento_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Usuario_crea_fk4" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Usuario_mod_fk3" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_HojaVida_fk3" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Usuario_fk2" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Usuario_crea_fk5" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Usuario_mod_fk4" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Usuario_fk9" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Usuario_crea_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Usuario_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Usuario_mod_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Proyecto_fk2" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Usuario_crea_fk2" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Pers_Contr_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ID_Pers_Sup_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="WebModel2.ArchivoI_Proyecto" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

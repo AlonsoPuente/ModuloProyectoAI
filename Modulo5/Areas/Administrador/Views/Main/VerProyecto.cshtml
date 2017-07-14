@@ -1,0 +1,63 @@
+﻿@model CoreDA.Proyecto
+
+<style>
+    body {
+        background-image: url("paper.gif");
+        background-color: #cccccc;
+    }
+</style>
+<br />
+<br />
+<br />
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row">
+        @Html.HiddenFor(model => model.ID_Proyecto)
+
+        <div class="col-xs-6 col-md-4">
+
+            <div class="card" style="width: 20rem;">
+
+                <div class="card-block">
+
+                    <h4 class="text-primary">@Html.DisplayNameFor(model => model.Titulo)</h4>
+                    <p class="card-text">@Html.DisplayFor(model => model.Titulo, "Título del proyecto")</p>
+                    <h4 class="text-primary">@Html.DisplayNameFor(model => model.Abstract)</h4>
+                    <p class="card-text">@Html.DisplayFor(model => model.Abstract, "Abstract")</p>
+                    <h4 class="text-primary">@Html.DisplayNameFor(model => model.Keywords)</h4>
+                    <p class="card-text">@Html.DisplayFor(model => model.Keywords, "Palabras clave"))</p>
+                    <h4 class="text-primary">@Html.DisplayNameFor(model => model.Keywords)</h4>
+                    <p class="card-text">@Html.DisplayFor(model => model.Tipo, "Tipo de proyecto"))</p>
+                    <p class="card-text">@Html.DisplayFor(model => model.Fecha_ini, "Fecha de inicio"))</p>
+
+                </div>
+
+                <div class="card-block">
+                   
+                    <a href="#" class="card-link">@Html.DisplayFor(model => model.Link_file, "Archivo del proyecto")</a>
+                </div>
+
+                <div>
+                    <input type="button" class="btn btn btn-info" name="name" value="Volver" id="btnVolver" onclick="history.back()" />
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-xs-6 col-md-4">
+
+            <img class="card-img-top" src="~/Fotos/esan2.jpg" height="400" width="500" alt="Card image cap">
+
+
+        </div>
+
+        </div>
+}
+
+
+
+

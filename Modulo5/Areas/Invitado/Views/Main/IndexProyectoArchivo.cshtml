@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "IndexProyectoArchivo";
+}
+
+<br />
+<br />
+
+
+<div id="divListadoProyectoInvitado">
+
+</div>
+
+<script>
+
+    CargarListado();    
+        
+
+    function CargarListado() {
+        $.ajax({
+            type: "POST",
+            url: "/Invitado/Main/ListadoProyInv",
+            success: function (html) {
+                $("#divListadoProyectoInvitado").html(html);
+            }
+        });
+    }    
+    
+</script>
+

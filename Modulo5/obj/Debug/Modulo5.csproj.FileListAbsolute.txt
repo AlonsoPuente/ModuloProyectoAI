@@ -1,0 +1,589 @@
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\ApplicationInsights.config
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\roslyn\csc.exe
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\roslyn\System.Collections.Immutable.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\roslyn\vbc.exe
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\roslyn\VBCSCompiler.exe
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\roslyn\VBCSCompiler.exe.config
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Modulo5.dll.config
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Modulo5.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Modulo5.pdb
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Antlr3.Runtime.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\EntityFramework.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\EntityFramework.SqlServer.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.AI.Web.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.AI.WindowsServer.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.ApplicationInsights.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.Owin.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.Owin.Security.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Google.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.Web.Infrastructure.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Newtonsoft.Json.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Owin.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\System.Web.Helpers.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\System.Web.Mvc.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\System.Web.Optimization.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\System.Web.Razor.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\System.Web.WebPages.Deployment.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\System.Web.WebPages.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\System.Web.WebPages.Razor.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\WebGrease.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.AI.Web.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.AI.WindowsServer.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.ApplicationInsights.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\System.Web.Helpers.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\System.Web.Mvc.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\System.Web.Optimization.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\System.Web.Razor.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\System.Web.WebPages.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\System.Web.WebPages.Deployment.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\System.Web.WebPages.Razor.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Antlr3.Runtime.pdb
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Newtonsoft.Json.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\EntityFramework.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\EntityFramework.SqlServer.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.Owin.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.Owin.Security.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Google.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\obj\Debug\Modulo5.csprojResolveAssemblyReference.cache
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\obj\Debug\Modulo5.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\obj\Debug\Modulo5.pdb
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\CoreDA.dll
+c:\users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\Modulo5\bin\CoreDA.pdb
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\ApplicationInsights.config
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\roslyn\csc.exe
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\roslyn\vbc.exe
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\roslyn\VBCSCompiler.exe
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Modulo5.dll.config
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Modulo5.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Modulo5.pdb
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Antlr3.Runtime.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\CoreDA.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\EntityFramework.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\EntityFramework.SqlServer.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.AI.Web.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.ApplicationInsights.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.Owin.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.Owin.Security.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Newtonsoft.Json.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Owin.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\System.Web.Helpers.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\System.Web.Mvc.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\System.Web.Optimization.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\System.Web.Razor.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\System.Web.WebPages.Deployment.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\System.Web.WebPages.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\System.Web.WebPages.Razor.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\WebGrease.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\CoreDA.pdb
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.AI.Web.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.ApplicationInsights.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\System.Web.Helpers.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\System.Web.Mvc.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\System.Web.Optimization.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\System.Web.Razor.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\System.Web.WebPages.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\System.Web.WebPages.Deployment.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\System.Web.WebPages.Razor.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Antlr3.Runtime.pdb
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Newtonsoft.Json.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\EntityFramework.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\EntityFramework.SqlServer.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.Owin.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.Owin.Security.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\obj\Debug\Modulo5.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\obj\Debug\Modulo5.pdb
+C:\Users\laboratorioesan\Desktop\Modulo5\Modulo5\obj\Debug\Modulo5.csprojResolveAssemblyReference.cache
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\ApplicationInsights.config
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\roslyn\csc.exe
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\roslyn\vbc.exe
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\roslyn\VBCSCompiler.exe
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Modulo5.dll.config
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Modulo5.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Modulo5.pdb
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Antlr3.Runtime.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\CoreDA.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\EntityFramework.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\EntityFramework.SqlServer.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.AI.Web.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.ApplicationInsights.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Newtonsoft.Json.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Owin.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\System.Web.Helpers.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\System.Web.Mvc.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\System.Web.Optimization.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\System.Web.Razor.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\System.Web.WebPages.Deployment.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\System.Web.WebPages.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\System.Web.WebPages.Razor.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\WebGrease.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\CoreDA.pdb
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.AI.Web.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.ApplicationInsights.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\System.Web.Helpers.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\System.Web.Mvc.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\System.Web.Optimization.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\System.Web.Razor.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\System.Web.WebPages.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\System.Web.WebPages.Deployment.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\System.Web.WebPages.Razor.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Antlr3.Runtime.pdb
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Newtonsoft.Json.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\EntityFramework.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\EntityFramework.SqlServer.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\obj\Debug\Modulo5.csprojResolveAssemblyReference.cache
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\obj\Debug\Modulo5.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\Modulo5\obj\Debug\Modulo5.pdb
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\ApplicationInsights.config
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\roslyn\csc.exe
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\roslyn\vbc.exe
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\roslyn\VBCSCompiler.exe
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Modulo5.dll.config
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Modulo5.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Modulo5.pdb
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Antlr3.Runtime.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\CoreDA.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\EntityFramework.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\EntityFramework.SqlServer.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.AI.Web.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Newtonsoft.Json.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Owin.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\System.Web.Helpers.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\System.Web.Mvc.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\System.Web.Optimization.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\System.Web.Razor.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\System.Web.WebPages.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\System.Web.WebPages.Razor.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\WebGrease.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\CoreDA.pdb
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.AI.Web.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\System.Web.Helpers.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\System.Web.Mvc.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\System.Web.Optimization.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\System.Web.Razor.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\System.Web.WebPages.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\System.Web.WebPages.Razor.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Antlr3.Runtime.pdb
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Newtonsoft.Json.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\EntityFramework.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\EntityFramework.SqlServer.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\obj\Debug\Modulo5.csprojResolveAssemblyReference.cache
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\obj\Debug\Modulo5.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\Modulo5\obj\Debug\Modulo5.pdb
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\ApplicationInsights.config
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\roslyn\csc.exe
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\roslyn\vbc.exe
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\roslyn\VBCSCompiler.exe
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Modulo5.dll.config
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Modulo5.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Modulo5.pdb
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Antlr3.Runtime.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\CoreDA.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\EntityFramework.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\EntityFramework.SqlServer.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.AI.Web.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.ApplicationInsights.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.Owin.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.Owin.Security.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Newtonsoft.Json.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Owin.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\System.Web.Helpers.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\System.Web.Mvc.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\System.Web.Optimization.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\System.Web.Razor.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\System.Web.WebPages.Deployment.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\System.Web.WebPages.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\System.Web.WebPages.Razor.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\WebGrease.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\CoreDA.pdb
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\CoreDA.dll.config
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.AI.Web.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.ApplicationInsights.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\System.Web.Helpers.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\System.Web.Mvc.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\System.Web.Optimization.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\System.Web.Razor.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\System.Web.WebPages.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\System.Web.WebPages.Deployment.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\System.Web.WebPages.Razor.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Antlr3.Runtime.pdb
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Newtonsoft.Json.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\EntityFramework.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\EntityFramework.SqlServer.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.Owin.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.Owin.Security.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\obj\Debug\Modulo5.csprojResolveAssemblyReference.cache
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\obj\Debug\Modulo5.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\Modulo5\obj\Debug\Modulo5.pdb
+E:\M5Bosstrap\Modulo5\bin\ApplicationInsights.config
+E:\M5Bosstrap\Modulo5\bin\roslyn\csc.exe
+E:\M5Bosstrap\Modulo5\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\M5Bosstrap\Modulo5\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\M5Bosstrap\Modulo5\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\M5Bosstrap\Modulo5\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\M5Bosstrap\Modulo5\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\M5Bosstrap\Modulo5\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\M5Bosstrap\Modulo5\bin\roslyn\System.Collections.Immutable.dll
+E:\M5Bosstrap\Modulo5\bin\roslyn\System.Reflection.Metadata.dll
+E:\M5Bosstrap\Modulo5\bin\roslyn\vbc.exe
+E:\M5Bosstrap\Modulo5\bin\roslyn\VBCSCompiler.exe
+E:\M5Bosstrap\Modulo5\bin\roslyn\VBCSCompiler.exe.config
+E:\M5Bosstrap\Modulo5\bin\Modulo5.dll.config
+E:\M5Bosstrap\Modulo5\bin\Modulo5.dll
+E:\M5Bosstrap\Modulo5\bin\Modulo5.pdb
+E:\M5Bosstrap\Modulo5\bin\Antlr3.Runtime.dll
+E:\M5Bosstrap\Modulo5\bin\CoreDA.dll
+E:\M5Bosstrap\Modulo5\bin\EntityFramework.dll
+E:\M5Bosstrap\Modulo5\bin\EntityFramework.SqlServer.dll
+E:\M5Bosstrap\Modulo5\bin\Microsoft.AI.Agent.Intercept.dll
+E:\M5Bosstrap\Modulo5\bin\Microsoft.AI.DependencyCollector.dll
+E:\M5Bosstrap\Modulo5\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\M5Bosstrap\Modulo5\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\M5Bosstrap\Modulo5\bin\Microsoft.AI.Web.dll
+E:\M5Bosstrap\Modulo5\bin\Microsoft.AI.WindowsServer.dll
+E:\M5Bosstrap\Modulo5\bin\Microsoft.ApplicationInsights.dll
+E:\M5Bosstrap\Modulo5\bin\Microsoft.AspNet.Identity.Core.dll
+E:\M5Bosstrap\Modulo5\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\M5Bosstrap\Modulo5\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\M5Bosstrap\Modulo5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.dll
+E:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.Cookies.dll
+E:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.dll
+E:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.Facebook.dll
+E:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.Google.dll
+E:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.OAuth.dll
+E:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.Twitter.dll
+E:\M5Bosstrap\Modulo5\bin\Microsoft.Web.Infrastructure.dll
+E:\M5Bosstrap\Modulo5\bin\Newtonsoft.Json.dll
+E:\M5Bosstrap\Modulo5\bin\Owin.dll
+E:\M5Bosstrap\Modulo5\bin\System.Web.Helpers.dll
+E:\M5Bosstrap\Modulo5\bin\System.Web.Mvc.dll
+E:\M5Bosstrap\Modulo5\bin\System.Web.Optimization.dll
+E:\M5Bosstrap\Modulo5\bin\System.Web.Razor.dll
+E:\M5Bosstrap\Modulo5\bin\System.Web.WebPages.Deployment.dll
+E:\M5Bosstrap\Modulo5\bin\System.Web.WebPages.dll
+E:\M5Bosstrap\Modulo5\bin\System.Web.WebPages.Razor.dll
+E:\M5Bosstrap\Modulo5\bin\WebGrease.dll
+E:\M5Bosstrap\Modulo5\bin\CoreDA.pdb
+E:\M5Bosstrap\Modulo5\bin\Microsoft.AI.DependencyCollector.xml
+E:\M5Bosstrap\Modulo5\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\M5Bosstrap\Modulo5\bin\Microsoft.AI.Web.xml
+E:\M5Bosstrap\Modulo5\bin\Microsoft.AI.WindowsServer.xml
+E:\M5Bosstrap\Modulo5\bin\Microsoft.ApplicationInsights.xml
+E:\M5Bosstrap\Modulo5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\M5Bosstrap\Modulo5\bin\System.Web.Helpers.xml
+E:\M5Bosstrap\Modulo5\bin\System.Web.Mvc.xml
+E:\M5Bosstrap\Modulo5\bin\System.Web.Optimization.xml
+E:\M5Bosstrap\Modulo5\bin\System.Web.Razor.xml
+E:\M5Bosstrap\Modulo5\bin\System.Web.WebPages.xml
+E:\M5Bosstrap\Modulo5\bin\System.Web.WebPages.Deployment.xml
+E:\M5Bosstrap\Modulo5\bin\System.Web.WebPages.Razor.xml
+E:\M5Bosstrap\Modulo5\bin\Antlr3.Runtime.pdb
+E:\M5Bosstrap\Modulo5\bin\Newtonsoft.Json.xml
+E:\M5Bosstrap\Modulo5\bin\EntityFramework.xml
+E:\M5Bosstrap\Modulo5\bin\EntityFramework.SqlServer.xml
+E:\M5Bosstrap\Modulo5\bin\Microsoft.AspNet.Identity.Core.xml
+E:\M5Bosstrap\Modulo5\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\M5Bosstrap\Modulo5\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.xml
+E:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.xml
+E:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.Facebook.xml
+E:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.Cookies.xml
+E:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.OAuth.xml
+E:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.Google.xml
+E:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.Twitter.xml
+E:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\M5Bosstrap\Modulo5\obj\Debug\Modulo5.csprojResolveAssemblyReference.cache
+E:\M5Bosstrap\Modulo5\obj\Debug\Modulo5.dll
+E:\M5Bosstrap\Modulo5\obj\Debug\Modulo5.pdb
+G:\M5Bosstrap\Modulo5\bin\ApplicationInsights.config
+G:\M5Bosstrap\Modulo5\bin\roslyn\csc.exe
+G:\M5Bosstrap\Modulo5\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\M5Bosstrap\Modulo5\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\M5Bosstrap\Modulo5\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\M5Bosstrap\Modulo5\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\M5Bosstrap\Modulo5\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\M5Bosstrap\Modulo5\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\M5Bosstrap\Modulo5\bin\roslyn\System.Collections.Immutable.dll
+G:\M5Bosstrap\Modulo5\bin\roslyn\System.Reflection.Metadata.dll
+G:\M5Bosstrap\Modulo5\bin\roslyn\vbc.exe
+G:\M5Bosstrap\Modulo5\bin\roslyn\VBCSCompiler.exe
+G:\M5Bosstrap\Modulo5\bin\roslyn\VBCSCompiler.exe.config
+G:\M5Bosstrap\Modulo5\bin\Modulo5.dll.config
+G:\M5Bosstrap\Modulo5\bin\Modulo5.dll
+G:\M5Bosstrap\Modulo5\bin\Modulo5.pdb
+G:\M5Bosstrap\Modulo5\bin\Antlr3.Runtime.dll
+G:\M5Bosstrap\Modulo5\bin\CoreDA.dll
+G:\M5Bosstrap\Modulo5\bin\EntityFramework.dll
+G:\M5Bosstrap\Modulo5\bin\EntityFramework.SqlServer.dll
+G:\M5Bosstrap\Modulo5\bin\Microsoft.AI.Agent.Intercept.dll
+G:\M5Bosstrap\Modulo5\bin\Microsoft.AI.DependencyCollector.dll
+G:\M5Bosstrap\Modulo5\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\M5Bosstrap\Modulo5\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\M5Bosstrap\Modulo5\bin\Microsoft.AI.Web.dll
+G:\M5Bosstrap\Modulo5\bin\Microsoft.AI.WindowsServer.dll
+G:\M5Bosstrap\Modulo5\bin\Microsoft.ApplicationInsights.dll
+G:\M5Bosstrap\Modulo5\bin\Microsoft.AspNet.Identity.Core.dll
+G:\M5Bosstrap\Modulo5\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\M5Bosstrap\Modulo5\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\M5Bosstrap\Modulo5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.dll
+G:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.Cookies.dll
+G:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.dll
+G:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.Facebook.dll
+G:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.Google.dll
+G:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.OAuth.dll
+G:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.Twitter.dll
+G:\M5Bosstrap\Modulo5\bin\Microsoft.Web.Infrastructure.dll
+G:\M5Bosstrap\Modulo5\bin\Newtonsoft.Json.dll
+G:\M5Bosstrap\Modulo5\bin\Owin.dll
+G:\M5Bosstrap\Modulo5\bin\System.Web.Helpers.dll
+G:\M5Bosstrap\Modulo5\bin\System.Web.Mvc.dll
+G:\M5Bosstrap\Modulo5\bin\System.Web.Optimization.dll
+G:\M5Bosstrap\Modulo5\bin\System.Web.Razor.dll
+G:\M5Bosstrap\Modulo5\bin\System.Web.WebPages.Deployment.dll
+G:\M5Bosstrap\Modulo5\bin\System.Web.WebPages.dll
+G:\M5Bosstrap\Modulo5\bin\System.Web.WebPages.Razor.dll
+G:\M5Bosstrap\Modulo5\bin\WebGrease.dll
+G:\M5Bosstrap\Modulo5\bin\CoreDA.pdb
+G:\M5Bosstrap\Modulo5\bin\Microsoft.AI.DependencyCollector.xml
+G:\M5Bosstrap\Modulo5\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\M5Bosstrap\Modulo5\bin\Microsoft.AI.Web.xml
+G:\M5Bosstrap\Modulo5\bin\Microsoft.AI.WindowsServer.xml
+G:\M5Bosstrap\Modulo5\bin\Microsoft.ApplicationInsights.xml
+G:\M5Bosstrap\Modulo5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\M5Bosstrap\Modulo5\bin\System.Web.Helpers.xml
+G:\M5Bosstrap\Modulo5\bin\System.Web.Mvc.xml
+G:\M5Bosstrap\Modulo5\bin\System.Web.Optimization.xml
+G:\M5Bosstrap\Modulo5\bin\System.Web.Razor.xml
+G:\M5Bosstrap\Modulo5\bin\System.Web.WebPages.xml
+G:\M5Bosstrap\Modulo5\bin\System.Web.WebPages.Deployment.xml
+G:\M5Bosstrap\Modulo5\bin\System.Web.WebPages.Razor.xml
+G:\M5Bosstrap\Modulo5\bin\Antlr3.Runtime.pdb
+G:\M5Bosstrap\Modulo5\bin\Newtonsoft.Json.xml
+G:\M5Bosstrap\Modulo5\bin\EntityFramework.xml
+G:\M5Bosstrap\Modulo5\bin\EntityFramework.SqlServer.xml
+G:\M5Bosstrap\Modulo5\bin\Microsoft.AspNet.Identity.Core.xml
+G:\M5Bosstrap\Modulo5\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\M5Bosstrap\Modulo5\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.xml
+G:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.xml
+G:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.Facebook.xml
+G:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.Cookies.xml
+G:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.OAuth.xml
+G:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.Google.xml
+G:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.Twitter.xml
+G:\M5Bosstrap\Modulo5\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\M5Bosstrap\Modulo5\obj\Debug\Modulo5.csprojResolveAssemblyReference.cache
+G:\M5Bosstrap\Modulo5\obj\Debug\Modulo5.dll
+G:\M5Bosstrap\Modulo5\obj\Debug\Modulo5.pdb

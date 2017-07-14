@@ -1,0 +1,187 @@
+﻿@{
+    ViewBag.Title = "IndexProyecto";
+}
+
+<br />
+<br />
+
+<input type="button" class="btn btn btn-info" name="name" value="Nuevo registro" id="btnRegistro" />
+
+
+<h1>PROYECTOS</h1>
+
+<p>Muchas de las grandes innovaciones que han cambiado el mundo han sido producto de un trabajo dedicado y comprometido. Por eso es necesaria la preparación de ingenieros innovadores y creativos. Para la Universidad Esan, la investigación es un paso fundamental para la solución de los problemas del futuro. Por ello sus actividades de investigación atienden temáticas diversas. Se enfocan en temas de energía, agua y medio ambiente, así como en proyectos de desarrollo en materiales, tecnologías de la información y sistemas mecánicos y mecatrónicos. Para esto se utilizan métodos de aprendizaje activo y se fomenta la participación en  proyectos transdisciplinarios en colaboración con importantes instituciones de investigación, nacionales e internacionales. Estos son los proyectos generados por nuestros profesores:</p>
+
+<br />
+<br />
+
+<div id="divListadoProyecto">
+
+</div>
+
+
+<div id="modalForm" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Añadiendo nuevo proyecto</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4">.col-md-4</div>
+                    <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+                    <div class="col-md-2 col-md-offset-4">.col-md-2 .col-md-offset-4</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-9">
+                        Level 1: .col-sm-9
+                        <div class="row">
+                            <div class="col-xs-8 col-sm-6">
+                                Level 2: .col-xs-8 .col-sm-6
+                            </div>
+                            <div class="col-xs-4 col-sm-6">
+                                Level 2: .col-xs-4 .col-sm-6
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" id="btnSiguiente">Siguiente</button>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div id="modalFormPar" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Añadiendo nuevo proyecto</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4">.col-md-4</div>
+                    <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+                    <div class="col-md-2 col-md-offset-4">.col-md-2 .col-md-offset-4</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-9">
+                        Level 1: .col-sm-9
+                        <div class="row">
+                            <div class="col-xs-8 col-sm-6">
+                                Level 2: .col-xs-8 .col-sm-6
+                            </div>
+                            <div class="col-xs-4 col-sm-6">
+                                Level 2: .col-xs-4 .col-sm-6
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Regresar</button>
+                <button type="button" class="btn btn-primary" id="btnGuardar">Guardar Cambios</button>                
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<script>      
+        CargarListado();
+    
+    function CargarListado() {
+        $.ajax({
+            type: "POST",
+            url: "/Administrador/Main/ListadoP",
+            success: function (html) {
+                $("#divListadoProyecto").html(html);
+            }
+        });
+    }
+
+    $('#btnRegistro').click(function () {
+        //alert("Ando bien")
+        var modal = $("#modalForm");
+        $.ajax({
+            type: "POST",
+            url: "/Administrador/Main/FormProyecto",
+            success: function (html) {
+                modal.find(".modal-body").html(html);
+                modal.modal();
+            }
+        });
+    });
+
+
+    $('#btnSiguiente').click(function () {
+        var modal = $("#modalFormPar");
+        $.ajax({
+            type: "POST",
+            url: "/Administrador/Main/Form_Part_Proy",
+            success: function (html) {
+                modal.find(".modal-body").html(html);
+                modal.modal();
+            }
+        });
+    });
+
+
+    $('#btnGuardar').click(function () {
+        var modal = $("#modalFormPar");
+
+        var vID_Usuario = modal.find(".modal-body #ID_Usuario").val()
+        var vRol = modal.find(".modal-body #Rol").val()
+
+        var modal = $("#modalForm");
+        var vTitulo = modal.find(".modal-body #Titulo").val()
+        var vAbstract = modal.find(".modal-body #Abstract").val()
+        var vKeywords = modal.find(".modal-body #Keywords").val()
+        var vFecha_pub = modal.find(".modal-body #Fecha_pub").val()
+        var vTipo = modal.find(".modal-body #Tipo").val()
+        var vFecha_ini = modal.find(".modal-body #Fecha_ini").val()
+        var vFecha_fin = modal.find(".modal-body #Fecha_fin").val()
+        var vLink_file = modal.find(".modal-body #Link_file").val()
+        var vEstado = modal.find(".modal-body #Estado").val()
+        var vID_Usuario_crea = modal.find(".modal-body #ID_Usuario_crea").val()    
+
+        $.ajax({
+            type: "POST",
+            url: "/Administrador/Main/GrabarProyecto",
+
+            data: {
+                titulo: vTitulo, absract: vAbstract,
+                keyword: vKeywords, fecha_pub: vFecha_pub, tipo: vTipo, fecha_ini: vFecha_ini, fecha_fini: vFecha_fin,
+                link: vLink_file, estado: vEstado, usuario_crea: vID_Usuario_crea,
+                ID_Usuario:vID_Usuario, Rol: vRol
+
+            },
+
+            success: function (html) {
+                //modal.find(".modal-body").html(html);
+                //modal.modal();
+                //modal.hide();
+                CargarListado();
+            }
+        });
+    });
+</script>

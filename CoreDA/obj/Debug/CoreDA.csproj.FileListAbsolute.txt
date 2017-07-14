@@ -1,0 +1,60 @@
+c:\Users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\CoreDA\bin\Debug\CoreDA.dll.config
+c:\Users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\CoreDA\bin\Debug\CoreDA.dll
+c:\Users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\CoreDA\bin\Debug\CoreDA.pdb
+c:\Users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\CoreDA\bin\Debug\EntityFramework.dll
+c:\Users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\CoreDA\bin\Debug\EntityFramework.SqlServer.dll
+c:\Users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\CoreDA\bin\Debug\EntityFramework.xml
+c:\Users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\CoreDA\bin\Debug\EntityFramework.SqlServer.xml
+c:\Users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\CoreDA\obj\Debug\CoreDA.csprojResolveAssemblyReference.cache
+c:\Users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\CoreDA\obj\Debug\CoreDA.dll
+c:\Users\laboratorioesan\documents\visual studio 2015\Projects\Modulo5\CoreDA\obj\Debug\CoreDA.pdb
+C:\Users\laboratorioesan\Desktop\Modulo5\CoreDA\obj\Debug\CoreDA.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\CoreDA\obj\Debug\CoreDA.pdb
+C:\Users\laboratorioesan\Desktop\Modulo5\CoreDA\bin\Debug\CoreDA.dll.config
+C:\Users\laboratorioesan\Desktop\Modulo5\CoreDA\bin\Debug\CoreDA.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\CoreDA\bin\Debug\CoreDA.pdb
+C:\Users\laboratorioesan\Desktop\Modulo5\CoreDA\bin\Debug\EntityFramework.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\CoreDA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\laboratorioesan\Desktop\Modulo5\CoreDA\bin\Debug\EntityFramework.xml
+C:\Users\laboratorioesan\Desktop\Modulo5\CoreDA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\CoreDA\bin\Debug\CoreDA.dll.config
+C:\Users\laboratorioesan\Downloads\Modulo5\CoreDA\bin\Debug\CoreDA.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\CoreDA\bin\Debug\CoreDA.pdb
+C:\Users\laboratorioesan\Downloads\Modulo5\CoreDA\bin\Debug\EntityFramework.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\CoreDA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\CoreDA\bin\Debug\EntityFramework.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\CoreDA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\laboratorioesan\Downloads\Modulo5\CoreDA\obj\Debug\CoreDA.csprojResolveAssemblyReference.cache
+C:\Users\laboratorioesan\Downloads\Modulo5\CoreDA\obj\Debug\CoreDA.dll
+C:\Users\laboratorioesan\Downloads\Modulo5\CoreDA\obj\Debug\CoreDA.pdb
+C:\Users\Alonso Puente\Downloads\Modulo5\CoreDA\bin\Debug\CoreDA.dll.config
+C:\Users\Alonso Puente\Downloads\Modulo5\CoreDA\bin\Debug\CoreDA.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\CoreDA\bin\Debug\CoreDA.pdb
+C:\Users\Alonso Puente\Downloads\Modulo5\CoreDA\bin\Debug\EntityFramework.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\CoreDA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\CoreDA\bin\Debug\EntityFramework.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\CoreDA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alonso Puente\Downloads\Modulo5\CoreDA\obj\Debug\CoreDA.csprojResolveAssemblyReference.cache
+C:\Users\Alonso Puente\Downloads\Modulo5\CoreDA\obj\Debug\CoreDA.dll
+C:\Users\Alonso Puente\Downloads\Modulo5\CoreDA\obj\Debug\CoreDA.pdb
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\CoreDA\bin\Debug\CoreDA.dll.config
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\CoreDA\bin\Debug\CoreDA.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\CoreDA\bin\Debug\CoreDA.pdb
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\CoreDA\bin\Debug\EntityFramework.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\CoreDA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\CoreDA\bin\Debug\EntityFramework.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\CoreDA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\CoreDA\obj\Debug\CoreDA.csprojResolveAssemblyReference.cache
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\CoreDA\obj\Debug\CoreDA.dll
+C:\Users\toshiba\Desktop\Nueva carpeta (3)\Modulo5\CoreDA\obj\Debug\CoreDA.pdb
+C:\Users\laboratorioesan\Desktop\Modulo5\CoreDA\obj\Debug\CoreDA.csprojResolveAssemblyReference.cache
+E:\M5Bosstrap\CoreDA\bin\Debug\CoreDA.dll.config
+E:\M5Bosstrap\CoreDA\bin\Debug\CoreDA.dll
+E:\M5Bosstrap\CoreDA\bin\Debug\CoreDA.pdb
+E:\M5Bosstrap\CoreDA\bin\Debug\EntityFramework.dll
+E:\M5Bosstrap\CoreDA\bin\Debug\EntityFramework.SqlServer.dll
+E:\M5Bosstrap\CoreDA\bin\Debug\EntityFramework.xml
+E:\M5Bosstrap\CoreDA\bin\Debug\EntityFramework.SqlServer.xml
+E:\M5Bosstrap\CoreDA\obj\Debug\CoreDA.csprojResolveAssemblyReference.cache
+E:\M5Bosstrap\CoreDA\obj\Debug\CoreDA.dll
+E:\M5Bosstrap\CoreDA\obj\Debug\CoreDA.pdb
